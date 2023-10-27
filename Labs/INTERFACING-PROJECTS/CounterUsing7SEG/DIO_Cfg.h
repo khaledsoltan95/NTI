@@ -1,0 +1,80 @@
+#ifndef DIO_CFG_H
+#define DIO_CFG_H
+
+										/* SELECT PORT DIRECTION */
+
+	#define 			PORTAPIN0			INPUT
+	#define 			PORTAPIN1			INPUT
+	#define 			PORTAPIN2			INPUT
+	#define 			PORTAPIN3			INPUT
+	#define 			PORTAPIN4			INPUT
+	#define 			PORTAPIN5			INPUT
+	#define 			PORTAPIN6			INPUT
+	#define 			PORTAPIN7			INPUT
+
+	#define 			PORTBPIN0			OUTPUT
+	#define 			PORTBPIN1			OUTPUT
+	#define 			PORTBPIN2			OUTPUT
+	#define 			PORTBPIN3			OUTPUT
+	#define 			PORTBPIN4			OUTPUT
+	#define 			PORTBPIN5			OUTPUT
+	#define 			PORTBPIN6			OUTPUT
+	#define 			PORTBPIN7			OUTPUT
+
+	#define 			PORTCPIN0			INPUT
+	#define 			PORTCPIN1			INPUT
+	#define 			PORTCPIN2			INPUT
+	#define 			PORTCPIN3			INPUT
+	#define 			PORTCPIN4			INPUT
+	#define 			PORTCPIN5			INPUT
+	#define 			PORTCPIN6			INPUT
+	#define 			PORTCPIN7			INPUT
+
+	#define 			PORTDPIN0			OUTPUT
+	#define 			PORTDPIN1			OUTPUT
+	#define 			PORTDPIN2			OUTPUT
+	#define 			PORTDPIN3			OUTPUT
+	#define 			PORTDPIN4			OUTPUT
+	#define 			PORTDPIN5			OUTPUT
+	#define 			PORTDPIN6			OUTPUT
+	#define 			PORTDPIN7			OUTPUT
+
+										/* SELECT PORT VALUE */
+
+	#define 			VALPORTAPIN0		PULLEDUP
+	#define 			VALPORTAPIN1		PULLEDUP
+	#define 			VALPORTAPIN2		PULLEDUP
+	#define 			VALPORTAPIN3		PULLEDUP
+	#define 			VALPORTAPIN4		PULLEDUP
+	#define 			VALPORTAPIN5		PULLEDUP
+	#define 			VALPORTAPIN6		PULLEDUP
+	#define 			VALPORTAPIN7		PULLEDUP
+
+	#define 			VALPORTBPIN0		HIGH
+	#define 			VALPORTBPIN1		HIGH
+	#define 			VALPORTBPIN2		HIGH
+	#define 			VALPORTBPIN3		HIGH
+	#define 			VALPORTBPIN4		HIGH
+	#define 			VALPORTBPIN5		HIGH
+	#define 			VALPORTBPIN6		HIGH
+	#define 			VALPORTBPIN7		HIGH
+
+	#define 			VALPORTCPIN0		FLOATING
+	#define 			VALPORTCPIN1		FLOATING
+	#define 			VALPORTCPIN2		FLOATING
+	#define 			VALPORTCPIN3		FLOATING
+	#define 			VALPORTCPIN4		FLOATING
+	#define 			VALPORTCPIN5		FLOATING
+	#define 			VALPORTCPIN6		FLOATING
+	#define 			VALPORTCPIN7		FLOATING
+
+	#define 			VALPORTDPIN0		HIGH
+	#define 			VALPORTDPIN1		HIGH
+	#define 			VALPORTDPIN2		HIGH
+	#define 			VALPORTDPIN3		HIGH
+	#define 			VALPORTDPIN4		HIGH
+	#define 			VALPORTDPIN5		HIGH
+	#define 			VALPORTDPIN6		HIGH
+	#define 			VALPORTDPIN7		HIGH
+
+#endif
