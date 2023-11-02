@@ -9,27 +9,27 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, DATA
   2 .bss          00000002  00800072  00800072  00001f54  2**0
                   ALLOC
-  3 .stab         00001a58  00000000  00000000  00001f54  2**2
+  3 .stab         00001b30  00000000  00000000  00001f54  2**2
                   CONTENTS, READONLY, DEBUGGING
-  4 .stabstr      00000f5d  00000000  00000000  000039ac  2**0
+  4 .stabstr      00000f91  00000000  00000000  00003a84  2**0
                   CONTENTS, READONLY, DEBUGGING
-  5 .debug_aranges 00000140  00000000  00000000  00004909  2**0
+  5 .debug_aranges 00000140  00000000  00000000  00004a15  2**0
                   CONTENTS, READONLY, DEBUGGING
-  6 .debug_pubnames 00000170  00000000  00000000  00004a49  2**0
+  6 .debug_pubnames 00000170  00000000  00000000  00004b55  2**0
                   CONTENTS, READONLY, DEBUGGING
-  7 .debug_info   00001c49  00000000  00000000  00004bb9  2**0
+  7 .debug_info   00001c49  00000000  00000000  00004cc5  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_abbrev 00000eeb  00000000  00000000  00006802  2**0
+  8 .debug_abbrev 00000eeb  00000000  00000000  0000690e  2**0
                   CONTENTS, READONLY, DEBUGGING
-  9 .debug_line   00000dad  00000000  00000000  000076ed  2**0
+  9 .debug_line   00000dad  00000000  00000000  000077f9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_frame  00000160  00000000  00000000  0000849c  2**2
+ 10 .debug_frame  00000160  00000000  00000000  000085a8  2**2
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_str    0000028d  00000000  00000000  000085fc  2**0
+ 11 .debug_str    0000028d  00000000  00000000  00008708  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_loc    000007ce  00000000  00000000  00008889  2**0
+ 12 .debug_loc    000007ce  00000000  00000000  00008995  2**0
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_ranges 00000050  00000000  00000000  00009057  2**0
+ 13 .debug_ranges 00000050  00000000  00000000  00009163  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -1472,7 +1472,7 @@ static void voidSetHalfDataPort (uint8 copy_u8FourBitData)
      b54:	98 2f       	mov	r25, r24
      b56:	91 70       	andi	r25, 0x01	; 1
      b58:	81 e0       	ldi	r24, 0x01	; 1
-     b5a:	60 e0       	ldi	r22, 0x00	; 0
+     b5a:	61 e0       	ldi	r22, 0x01	; 1
      b5c:	49 2f       	mov	r20, r25
      b5e:	0e 94 28 0a 	call	0x1450	; 0x1450 <DIO_U8SetPinValue>
 	DIO_U8SetPinValue(CLCD_u8DATA_PORT,CLCD_u8D5_PIN,GET_BIT(copy_u8FourBitData,1)) ;
@@ -1481,7 +1481,7 @@ static void voidSetHalfDataPort (uint8 copy_u8FourBitData)
      b66:	98 2f       	mov	r25, r24
      b68:	91 70       	andi	r25, 0x01	; 1
      b6a:	81 e0       	ldi	r24, 0x01	; 1
-     b6c:	61 e0       	ldi	r22, 0x01	; 1
+     b6c:	62 e0       	ldi	r22, 0x02	; 2
      b6e:	49 2f       	mov	r20, r25
      b70:	0e 94 28 0a 	call	0x1450	; 0x1450 <DIO_U8SetPinValue>
 	DIO_U8SetPinValue(CLCD_u8DATA_PORT,CLCD_u8D6_PIN,GET_BIT(copy_u8FourBitData,2)) ;
@@ -1491,7 +1491,7 @@ static void voidSetHalfDataPort (uint8 copy_u8FourBitData)
      b7a:	98 2f       	mov	r25, r24
      b7c:	91 70       	andi	r25, 0x01	; 1
      b7e:	81 e0       	ldi	r24, 0x01	; 1
-     b80:	62 e0       	ldi	r22, 0x02	; 2
+     b80:	63 e0       	ldi	r22, 0x03	; 3
      b82:	49 2f       	mov	r20, r25
      b84:	0e 94 28 0a 	call	0x1450	; 0x1450 <DIO_U8SetPinValue>
 	DIO_U8SetPinValue(CLCD_u8DATA_PORT,CLCD_u8D7_PIN,GET_BIT(copy_u8FourBitData,3)) ;
@@ -3928,7 +3928,7 @@ sint32 MAP ( sint32 InputRangeMin , sint32 InputRangeMax ,  sint32 OutputRangeMi
 		DDRB  = PORTB_DIR     ;
     1a96:	e7 e3       	ldi	r30, 0x37	; 55
     1a98:	f0 e0       	ldi	r31, 0x00	; 0
-    1a9a:	87 e1       	ldi	r24, 0x17	; 23
+    1a9a:	8e e1       	ldi	r24, 0x1E	; 30
     1a9c:	80 83       	st	Z, r24
 		DDRC  = PORTC_DIR     ;
     1a9e:	e4 e3       	ldi	r30, 0x34	; 52

@@ -1,0 +1,1154 @@
+
+TWI_MASTER.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         00000698  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          00000002  00800060  00800060  0000070c  2**0
+                  ALLOC
+  2 .stab         00000b70  00000000  00000000  0000070c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      000009e3  00000000  00000000  0000127c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   8:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  10:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  14:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  18:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  1c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  20:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  24:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  28:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  2c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  30:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  34:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  38:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  3c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  40:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  44:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  48:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  4c:	0c 94 a9 02 	jmp	0x552	; 0x552 <__vector_19>
+  50:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_clear_bss>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	01 c0       	rjmp	.+2      	; 0x6a <.do_clear_bss_start>
+
+00000068 <.do_clear_bss_loop>:
+  68:	1d 92       	st	X+, r1
+
+0000006a <.do_clear_bss_start>:
+  6a:	a2 36       	cpi	r26, 0x62	; 98
+  6c:	b1 07       	cpc	r27, r17
+  6e:	e1 f7       	brne	.-8      	; 0x68 <.do_clear_bss_loop>
+  70:	0e 94 dc 02 	call	0x5b8	; 0x5b8 <main>
+  74:	0c 94 4a 03 	jmp	0x694	; 0x694 <_exit>
+
+00000078 <__bad_interrupt>:
+  78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000007c <MAP>:
+#include "STD_TYPES.h"
+#include "MAP.h"
+
+sint32 MAP ( sint32 InputRangeMin , sint32 InputRangeMax ,  sint32 OutputRangeMin , sint32 OutPutRangeMax , sint32 InputValue )
+{
+  7c:	af 92       	push	r10
+  7e:	bf 92       	push	r11
+  80:	cf 92       	push	r12
+  82:	df 92       	push	r13
+  84:	ef 92       	push	r14
+  86:	ff 92       	push	r15
+  88:	0f 93       	push	r16
+  8a:	1f 93       	push	r17
+  8c:	df 93       	push	r29
+  8e:	cf 93       	push	r28
+  90:	cd b7       	in	r28, 0x3d	; 61
+  92:	de b7       	in	r29, 0x3e	; 62
+  94:	68 97       	sbiw	r28, 0x18	; 24
+  96:	0f b6       	in	r0, 0x3f	; 63
+  98:	f8 94       	cli
+  9a:	de bf       	out	0x3e, r29	; 62
+  9c:	0f be       	out	0x3f, r0	; 63
+  9e:	cd bf       	out	0x3d, r28	; 61
+  a0:	69 87       	std	Y+9, r22	; 0x09
+  a2:	7a 87       	std	Y+10, r23	; 0x0a
+  a4:	8b 87       	std	Y+11, r24	; 0x0b
+  a6:	9c 87       	std	Y+12, r25	; 0x0c
+  a8:	2d 87       	std	Y+13, r18	; 0x0d
+  aa:	3e 87       	std	Y+14, r19	; 0x0e
+  ac:	4f 87       	std	Y+15, r20	; 0x0f
+  ae:	58 8b       	std	Y+16, r21	; 0x10
+  b0:	e9 8a       	std	Y+17, r14	; 0x11
+  b2:	fa 8a       	std	Y+18, r15	; 0x12
+  b4:	0b 8b       	std	Y+19, r16	; 0x13
+  b6:	1c 8b       	std	Y+20, r17	; 0x14
+  b8:	ad 8a       	std	Y+21, r10	; 0x15
+  ba:	be 8a       	std	Y+22, r11	; 0x16
+  bc:	cf 8a       	std	Y+23, r12	; 0x17
+  be:	d8 8e       	std	Y+24, r13	; 0x18
+	sint32 Ratio ; 
+	sint32 OutputValue ; 
+	
+										/* Calculate the ratio of the input value in the input range */
+										
+    Ratio = ((InputValue - InputRangeMin) * 100u ) / (InputRangeMax - InputRangeMin) ; 
+  c0:	2d a1       	ldd	r18, Y+37	; 0x25
+  c2:	3e a1       	ldd	r19, Y+38	; 0x26
+  c4:	4f a1       	ldd	r20, Y+39	; 0x27
+  c6:	58 a5       	ldd	r21, Y+40	; 0x28
+  c8:	89 85       	ldd	r24, Y+9	; 0x09
+  ca:	9a 85       	ldd	r25, Y+10	; 0x0a
+  cc:	ab 85       	ldd	r26, Y+11	; 0x0b
+  ce:	bc 85       	ldd	r27, Y+12	; 0x0c
+  d0:	79 01       	movw	r14, r18
+  d2:	8a 01       	movw	r16, r20
+  d4:	e8 1a       	sub	r14, r24
+  d6:	f9 0a       	sbc	r15, r25
+  d8:	0a 0b       	sbc	r16, r26
+  da:	1b 0b       	sbc	r17, r27
+  dc:	d8 01       	movw	r26, r16
+  de:	c7 01       	movw	r24, r14
+  e0:	24 e6       	ldi	r18, 0x64	; 100
+  e2:	30 e0       	ldi	r19, 0x00	; 0
+  e4:	40 e0       	ldi	r20, 0x00	; 0
+  e6:	50 e0       	ldi	r21, 0x00	; 0
+  e8:	bc 01       	movw	r22, r24
+  ea:	cd 01       	movw	r24, r26
+  ec:	0e 94 ee 02 	call	0x5dc	; 0x5dc <__mulsi3>
+  f0:	7b 01       	movw	r14, r22
+  f2:	8c 01       	movw	r16, r24
+  f4:	2d 85       	ldd	r18, Y+13	; 0x0d
+  f6:	3e 85       	ldd	r19, Y+14	; 0x0e
+  f8:	4f 85       	ldd	r20, Y+15	; 0x0f
+  fa:	58 89       	ldd	r21, Y+16	; 0x10
+  fc:	89 85       	ldd	r24, Y+9	; 0x09
+  fe:	9a 85       	ldd	r25, Y+10	; 0x0a
+ 100:	ab 85       	ldd	r26, Y+11	; 0x0b
+ 102:	bc 85       	ldd	r27, Y+12	; 0x0c
+ 104:	28 1b       	sub	r18, r24
+ 106:	39 0b       	sbc	r19, r25
+ 108:	4a 0b       	sbc	r20, r26
+ 10a:	5b 0b       	sbc	r21, r27
+ 10c:	c8 01       	movw	r24, r16
+ 10e:	b7 01       	movw	r22, r14
+ 110:	0e 94 0d 03 	call	0x61a	; 0x61a <__divmodsi4>
+ 114:	da 01       	movw	r26, r20
+ 116:	c9 01       	movw	r24, r18
+ 118:	8d 83       	std	Y+5, r24	; 0x05
+ 11a:	9e 83       	std	Y+6, r25	; 0x06
+ 11c:	af 83       	std	Y+7, r26	; 0x07
+ 11e:	b8 87       	std	Y+8, r27	; 0x08
+    
+										/* Map the ratio to the output range */
+										
+    OutputValue = ( ( Ratio * (OutPutRangeMax - OutputRangeMin)) / 100u ) + OutputRangeMin ; 
+ 120:	2d 89       	ldd	r18, Y+21	; 0x15
+ 122:	3e 89       	ldd	r19, Y+22	; 0x16
+ 124:	4f 89       	ldd	r20, Y+23	; 0x17
+ 126:	58 8d       	ldd	r21, Y+24	; 0x18
+ 128:	89 89       	ldd	r24, Y+17	; 0x11
+ 12a:	9a 89       	ldd	r25, Y+18	; 0x12
+ 12c:	ab 89       	ldd	r26, Y+19	; 0x13
+ 12e:	bc 89       	ldd	r27, Y+20	; 0x14
+ 130:	79 01       	movw	r14, r18
+ 132:	8a 01       	movw	r16, r20
+ 134:	e8 1a       	sub	r14, r24
+ 136:	f9 0a       	sbc	r15, r25
+ 138:	0a 0b       	sbc	r16, r26
+ 13a:	1b 0b       	sbc	r17, r27
+ 13c:	d8 01       	movw	r26, r16
+ 13e:	c7 01       	movw	r24, r14
+ 140:	2d 81       	ldd	r18, Y+5	; 0x05
+ 142:	3e 81       	ldd	r19, Y+6	; 0x06
+ 144:	4f 81       	ldd	r20, Y+7	; 0x07
+ 146:	58 85       	ldd	r21, Y+8	; 0x08
+ 148:	bc 01       	movw	r22, r24
+ 14a:	cd 01       	movw	r24, r26
+ 14c:	0e 94 ee 02 	call	0x5dc	; 0x5dc <__mulsi3>
+ 150:	dc 01       	movw	r26, r24
+ 152:	cb 01       	movw	r24, r22
+ 154:	24 e6       	ldi	r18, 0x64	; 100
+ 156:	30 e0       	ldi	r19, 0x00	; 0
+ 158:	40 e0       	ldi	r20, 0x00	; 0
+ 15a:	50 e0       	ldi	r21, 0x00	; 0
+ 15c:	bc 01       	movw	r22, r24
+ 15e:	cd 01       	movw	r24, r26
+ 160:	0e 94 0d 03 	call	0x61a	; 0x61a <__divmodsi4>
+ 164:	da 01       	movw	r26, r20
+ 166:	c9 01       	movw	r24, r18
+ 168:	9c 01       	movw	r18, r24
+ 16a:	ad 01       	movw	r20, r26
+ 16c:	89 89       	ldd	r24, Y+17	; 0x11
+ 16e:	9a 89       	ldd	r25, Y+18	; 0x12
+ 170:	ab 89       	ldd	r26, Y+19	; 0x13
+ 172:	bc 89       	ldd	r27, Y+20	; 0x14
+ 174:	82 0f       	add	r24, r18
+ 176:	93 1f       	adc	r25, r19
+ 178:	a4 1f       	adc	r26, r20
+ 17a:	b5 1f       	adc	r27, r21
+ 17c:	89 83       	std	Y+1, r24	; 0x01
+ 17e:	9a 83       	std	Y+2, r25	; 0x02
+ 180:	ab 83       	std	Y+3, r26	; 0x03
+ 182:	bc 83       	std	Y+4, r27	; 0x04
+	
+										/* Return the output value */
+	
+    return OutputValue ; 
+ 184:	89 81       	ldd	r24, Y+1	; 0x01
+ 186:	9a 81       	ldd	r25, Y+2	; 0x02
+ 188:	ab 81       	ldd	r26, Y+3	; 0x03
+ 18a:	bc 81       	ldd	r27, Y+4	; 0x04
+ 18c:	bc 01       	movw	r22, r24
+ 18e:	cd 01       	movw	r24, r26
+ 190:	68 96       	adiw	r28, 0x18	; 24
+ 192:	0f b6       	in	r0, 0x3f	; 63
+ 194:	f8 94       	cli
+ 196:	de bf       	out	0x3e, r29	; 62
+ 198:	0f be       	out	0x3f, r0	; 63
+ 19a:	cd bf       	out	0x3d, r28	; 61
+ 19c:	cf 91       	pop	r28
+ 19e:	df 91       	pop	r29
+ 1a0:	1f 91       	pop	r17
+ 1a2:	0f 91       	pop	r16
+ 1a4:	ff 90       	pop	r15
+ 1a6:	ef 90       	pop	r14
+ 1a8:	df 90       	pop	r13
+ 1aa:	cf 90       	pop	r12
+ 1ac:	bf 90       	pop	r11
+ 1ae:	af 90       	pop	r10
+ 1b0:	08 95       	ret
+
+000001b2 <TWI_voidMasterInit>:
+#include "TWI_Reg.h"
+
+static void (*TWI_pvNotificationFunc)(void) = NULL ;
+
+	uint8 TWI_voidMasterInit 					( uint8 copy_u8MasterAddress )
+	{
+ 1b2:	df 93       	push	r29
+ 1b4:	cf 93       	push	r28
+ 1b6:	00 d0       	rcall	.+0      	; 0x1b8 <TWI_voidMasterInit+0x6>
+ 1b8:	cd b7       	in	r28, 0x3d	; 61
+ 1ba:	de b7       	in	r29, 0x3e	; 62
+ 1bc:	8a 83       	std	Y+2, r24	; 0x02
+		uint8 Local_u8ErrorState = 0U ;
+ 1be:	19 82       	std	Y+1, r1	; 0x01
+											/* ASSIGN MASTER ADDRESS */
+
+		if ( (copy_u8MasterAddress == 0u ) || ( ( copy_u8MasterAddress >> 4 ) == 0b00001111 ) )
+ 1c0:	8a 81       	ldd	r24, Y+2	; 0x02
+ 1c2:	88 23       	and	r24, r24
+ 1c4:	29 f0       	breq	.+10     	; 0x1d0 <TWI_voidMasterInit+0x1e>
+ 1c6:	8a 81       	ldd	r24, Y+2	; 0x02
+ 1c8:	82 95       	swap	r24
+ 1ca:	8f 70       	andi	r24, 0x0F	; 15
+ 1cc:	8f 30       	cpi	r24, 0x0F	; 15
+ 1ce:	19 f4       	brne	.+6      	; 0x1d6 <TWI_voidMasterInit+0x24>
+		{
+			Local_u8ErrorState = RESERVED_ADDRESS_WARNING ; 		// "THIS ADDRESS IS RESERVED "
+ 1d0:	85 e0       	ldi	r24, 0x05	; 5
+ 1d2:	89 83       	std	Y+1, r24	; 0x01
+ 1d4:	05 c0       	rjmp	.+10     	; 0x1e0 <TWI_voidMasterInit+0x2e>
+		}
+		else
+		{
+			TWAR = ( copy_u8MasterAddress << 1 ) ; 							// ASSIGN ADDRESS IN TWAR
+ 1d6:	e2 e2       	ldi	r30, 0x22	; 34
+ 1d8:	f0 e0       	ldi	r31, 0x00	; 0
+ 1da:	8a 81       	ldd	r24, Y+2	; 0x02
+ 1dc:	88 0f       	add	r24, r24
+ 1de:	80 83       	st	Z, r24
+		}
+
+											/* CLOCK CONFIGURATION */
+
+		CLR_BIT(TWSR,TWSR_TWPS0); 									// SET PRESCALER
+ 1e0:	a1 e2       	ldi	r26, 0x21	; 33
+ 1e2:	b0 e0       	ldi	r27, 0x00	; 0
+ 1e4:	e1 e2       	ldi	r30, 0x21	; 33
+ 1e6:	f0 e0       	ldi	r31, 0x00	; 0
+ 1e8:	80 81       	ld	r24, Z
+ 1ea:	8e 7f       	andi	r24, 0xFE	; 254
+ 1ec:	8c 93       	st	X, r24
+		CLR_BIT(TWSR,TWSR_TWPS1); 									// SET PRESCALER
+ 1ee:	a1 e2       	ldi	r26, 0x21	; 33
+ 1f0:	b0 e0       	ldi	r27, 0x00	; 0
+ 1f2:	e1 e2       	ldi	r30, 0x21	; 33
+ 1f4:	f0 e0       	ldi	r31, 0x00	; 0
+ 1f6:	80 81       	ld	r24, Z
+ 1f8:	8d 7f       	andi	r24, 0xFD	; 253
+ 1fa:	8c 93       	st	X, r24
+
+		TWBR = 12U ; 												// SCL FREQUENCY 4OO KBPS ASSUMING TWPS = 0
+ 1fc:	e0 e2       	ldi	r30, 0x20	; 32
+ 1fe:	f0 e0       	ldi	r31, 0x00	; 0
+ 200:	8c e0       	ldi	r24, 0x0C	; 12
+ 202:	80 83       	st	Z, r24
+
+											/* AKNOWLAGE BIT CONFIGURATION */
+
+		SET_BIT(TWCR,TWCR_TWEA) ; 									// ENABLE AKNOWLAGE BIT
+ 204:	a6 e5       	ldi	r26, 0x56	; 86
+ 206:	b0 e0       	ldi	r27, 0x00	; 0
+ 208:	e6 e5       	ldi	r30, 0x56	; 86
+ 20a:	f0 e0       	ldi	r31, 0x00	; 0
+ 20c:	80 81       	ld	r24, Z
+ 20e:	80 64       	ori	r24, 0x40	; 64
+ 210:	8c 93       	st	X, r24
+
+											/* TWI ENABLING */
+
+		SET_BIT(TWCR,TWCR_TWEN) ;
+ 212:	a6 e5       	ldi	r26, 0x56	; 86
+ 214:	b0 e0       	ldi	r27, 0x00	; 0
+ 216:	e6 e5       	ldi	r30, 0x56	; 86
+ 218:	f0 e0       	ldi	r31, 0x00	; 0
+ 21a:	80 81       	ld	r24, Z
+ 21c:	84 60       	ori	r24, 0x04	; 4
+ 21e:	8c 93       	st	X, r24
+
+		return Local_u8ErrorState ;
+ 220:	89 81       	ldd	r24, Y+1	; 0x01
+	}
+ 222:	0f 90       	pop	r0
+ 224:	0f 90       	pop	r0
+ 226:	cf 91       	pop	r28
+ 228:	df 91       	pop	r29
+ 22a:	08 95       	ret
+
+0000022c <TWI_voidSlaveInit>:
+
+	uint8 TWI_voidSlaveInit						( uint8 copy_u8SlaveAddress )
+	{
+ 22c:	df 93       	push	r29
+ 22e:	cf 93       	push	r28
+ 230:	00 d0       	rcall	.+0      	; 0x232 <TWI_voidSlaveInit+0x6>
+ 232:	cd b7       	in	r28, 0x3d	; 61
+ 234:	de b7       	in	r29, 0x3e	; 62
+ 236:	8a 83       	std	Y+2, r24	; 0x02
+		uint8 Local_u8ErrorState = 0U ;
+ 238:	19 82       	std	Y+1, r1	; 0x01
+
+											/* ASSIGN SLAVE ADDRESS */
+
+		if ( (copy_u8SlaveAddress == 0u ) || ( ( copy_u8SlaveAddress >> 4 ) == 0b00001111 ) )
+ 23a:	8a 81       	ldd	r24, Y+2	; 0x02
+ 23c:	88 23       	and	r24, r24
+ 23e:	29 f0       	breq	.+10     	; 0x24a <TWI_voidSlaveInit+0x1e>
+ 240:	8a 81       	ldd	r24, Y+2	; 0x02
+ 242:	82 95       	swap	r24
+ 244:	8f 70       	andi	r24, 0x0F	; 15
+ 246:	8f 30       	cpi	r24, 0x0F	; 15
+ 248:	19 f4       	brne	.+6      	; 0x250 <TWI_voidSlaveInit+0x24>
+		{
+
+			Local_u8ErrorState = RESERVED_ADDRESS_ERR ; 			// "THIS ADDRESS IS RESERVED "
+ 24a:	86 e0       	ldi	r24, 0x06	; 6
+ 24c:	89 83       	std	Y+1, r24	; 0x01
+ 24e:	0c c0       	rjmp	.+24     	; 0x268 <TWI_voidSlaveInit+0x3c>
+
+		}
+		else
+		{
+
+			TWAR = ( copy_u8SlaveAddress << 1 )  ; 							// ASSIGN ADDRESS IN TWAR
+ 250:	e2 e2       	ldi	r30, 0x22	; 34
+ 252:	f0 e0       	ldi	r31, 0x00	; 0
+ 254:	8a 81       	ldd	r24, Y+2	; 0x02
+ 256:	88 0f       	add	r24, r24
+ 258:	80 83       	st	Z, r24
+
+											/* AKNOWLAGE BIT CONFIGURATION */
+
+			SET_BIT(TWCR,TWCR_TWEA) ; 								// ENABLE AKNOWLAGE BIT
+ 25a:	a6 e5       	ldi	r26, 0x56	; 86
+ 25c:	b0 e0       	ldi	r27, 0x00	; 0
+ 25e:	e6 e5       	ldi	r30, 0x56	; 86
+ 260:	f0 e0       	ldi	r31, 0x00	; 0
+ 262:	80 81       	ld	r24, Z
+ 264:	80 64       	ori	r24, 0x40	; 64
+ 266:	8c 93       	st	X, r24
+
+		}
+
+
+		return Local_u8ErrorState ;
+ 268:	89 81       	ldd	r24, Y+1	; 0x01
+	}
+ 26a:	0f 90       	pop	r0
+ 26c:	0f 90       	pop	r0
+ 26e:	cf 91       	pop	r28
+ 270:	df 91       	pop	r29
+ 272:	08 95       	ret
+
+00000274 <TWI_voidSendStartCondition>:
+
+	void TWI_voidSendStartCondition				( void )
+	{
+ 274:	df 93       	push	r29
+ 276:	cf 93       	push	r28
+ 278:	cd b7       	in	r28, 0x3d	; 61
+ 27a:	de b7       	in	r29, 0x3e	; 62
+											/* SEND START CONDITION */
+		SET_BIT(TWCR,TWCR_TWSTA) ;
+ 27c:	a6 e5       	ldi	r26, 0x56	; 86
+ 27e:	b0 e0       	ldi	r27, 0x00	; 0
+ 280:	e6 e5       	ldi	r30, 0x56	; 86
+ 282:	f0 e0       	ldi	r31, 0x00	; 0
+ 284:	80 81       	ld	r24, Z
+ 286:	80 62       	ori	r24, 0x20	; 32
+ 288:	8c 93       	st	X, r24
+
+											/* WAIT UNTIL TWINT FLAG RAISED AND THE BUS IS AVAILABLE */
+
+		while ( ( GET_BIT(TWCR,TWCR_TWINT ) ) != 1 ) ;
+ 28a:	e6 e5       	ldi	r30, 0x56	; 86
+ 28c:	f0 e0       	ldi	r31, 0x00	; 0
+ 28e:	80 81       	ld	r24, Z
+ 290:	88 1f       	adc	r24, r24
+ 292:	88 27       	eor	r24, r24
+ 294:	88 1f       	adc	r24, r24
+ 296:	81 30       	cpi	r24, 0x01	; 1
+ 298:	c1 f7       	brne	.-16     	; 0x28a <TWI_voidSendStartCondition+0x16>
+
+											/* CLEAR TWINT FLAG */
+
+		SET_BIT(TWCR,TWCR_TWINT) ; 							//	THIS FLAG IS CLEARING WITH SETTING IT NOT CLEARING IT AS USUAL
+ 29a:	a6 e5       	ldi	r26, 0x56	; 86
+ 29c:	b0 e0       	ldi	r27, 0x00	; 0
+ 29e:	e6 e5       	ldi	r30, 0x56	; 86
+ 2a0:	f0 e0       	ldi	r31, 0x00	; 0
+ 2a2:	80 81       	ld	r24, Z
+ 2a4:	80 68       	ori	r24, 0x80	; 128
+ 2a6:	8c 93       	st	X, r24
+
+	}
+ 2a8:	cf 91       	pop	r28
+ 2aa:	df 91       	pop	r29
+ 2ac:	08 95       	ret
+
+000002ae <TWI_voidSendRepeatedStart>:
+
+	void TWI_voidSendRepeatedStart				( void )			/* WHY IT IS IMPORTANT TO MAKE A FUNCTION FOR IT */
+	{
+ 2ae:	df 93       	push	r29
+ 2b0:	cf 93       	push	r28
+ 2b2:	cd b7       	in	r28, 0x3d	; 61
+ 2b4:	de b7       	in	r29, 0x3e	; 62
+		TWI_voidSendStartCondition() ;
+ 2b6:	0e 94 3a 01 	call	0x274	; 0x274 <TWI_voidSendStartCondition>
+	}
+ 2ba:	cf 91       	pop	r28
+ 2bc:	df 91       	pop	r29
+ 2be:	08 95       	ret
+
+000002c0 <TWI_voidSendSlaveAddressWithWrite>:
+
+	void TWI_voidSendSlaveAddressWithWrite		( uint8 copy_u8SlaveAddress )
+	{
+ 2c0:	df 93       	push	r29
+ 2c2:	cf 93       	push	r28
+ 2c4:	0f 92       	push	r0
+ 2c6:	cd b7       	in	r28, 0x3d	; 61
+ 2c8:	de b7       	in	r29, 0x3e	; 62
+ 2ca:	89 83       	std	Y+1, r24	; 0x01
+												/* SET SLAVE ADDRESS IN TWDR */
+		TWDR = ( copy_u8SlaveAddress << 1 ) ;
+ 2cc:	e3 e2       	ldi	r30, 0x23	; 35
+ 2ce:	f0 e0       	ldi	r31, 0x00	; 0
+ 2d0:	89 81       	ldd	r24, Y+1	; 0x01
+ 2d2:	88 0f       	add	r24, r24
+ 2d4:	80 83       	st	Z, r24
+
+												/* SET OPERATION AS WRITE OPERATION */
+
+		CLR_BIT(TWDR,0) ;
+ 2d6:	a3 e2       	ldi	r26, 0x23	; 35
+ 2d8:	b0 e0       	ldi	r27, 0x00	; 0
+ 2da:	e3 e2       	ldi	r30, 0x23	; 35
+ 2dc:	f0 e0       	ldi	r31, 0x00	; 0
+ 2de:	80 81       	ld	r24, Z
+ 2e0:	8e 7f       	andi	r24, 0xFE	; 254
+ 2e2:	8c 93       	st	X, r24
+
+												/* TWI ENABLING */
+
+		SET_BIT(TWCR,TWCR_TWEN) ;
+ 2e4:	a6 e5       	ldi	r26, 0x56	; 86
+ 2e6:	b0 e0       	ldi	r27, 0x00	; 0
+ 2e8:	e6 e5       	ldi	r30, 0x56	; 86
+ 2ea:	f0 e0       	ldi	r31, 0x00	; 0
+ 2ec:	80 81       	ld	r24, Z
+ 2ee:	84 60       	ori	r24, 0x04	; 4
+ 2f0:	8c 93       	st	X, r24
+
+												/* WAIT UNTIL TWINT FLAG RAISED */
+
+		while ( ( GET_BIT(TWCR,TWCR_TWINT ) ) != 1 ) ;
+ 2f2:	e6 e5       	ldi	r30, 0x56	; 86
+ 2f4:	f0 e0       	ldi	r31, 0x00	; 0
+ 2f6:	80 81       	ld	r24, Z
+ 2f8:	88 1f       	adc	r24, r24
+ 2fa:	88 27       	eor	r24, r24
+ 2fc:	88 1f       	adc	r24, r24
+ 2fe:	81 30       	cpi	r24, 0x01	; 1
+ 300:	c1 f7       	brne	.-16     	; 0x2f2 <TWI_voidSendSlaveAddressWithWrite+0x32>
+
+												/* CLEAR TWINT FLAG */
+
+		SET_BIT(TWCR,TWCR_TWINT) ; 							//	THIS FLAG IS CLEARING WITH SETTING IT NOT CLEARING IT AS USUAL
+ 302:	a6 e5       	ldi	r26, 0x56	; 86
+ 304:	b0 e0       	ldi	r27, 0x00	; 0
+ 306:	e6 e5       	ldi	r30, 0x56	; 86
+ 308:	f0 e0       	ldi	r31, 0x00	; 0
+ 30a:	80 81       	ld	r24, Z
+ 30c:	80 68       	ori	r24, 0x80	; 128
+ 30e:	8c 93       	st	X, r24
+
+	}
+ 310:	0f 90       	pop	r0
+ 312:	cf 91       	pop	r28
+ 314:	df 91       	pop	r29
+ 316:	08 95       	ret
+
+00000318 <TWI_voidSendSlaveAddressWithRead>:
+
+	void TWI_voidSendSlaveAddressWithRead		( uint8 copy_u8SlaveAddress )
+	{
+ 318:	df 93       	push	r29
+ 31a:	cf 93       	push	r28
+ 31c:	0f 92       	push	r0
+ 31e:	cd b7       	in	r28, 0x3d	; 61
+ 320:	de b7       	in	r29, 0x3e	; 62
+ 322:	89 83       	std	Y+1, r24	; 0x01
+												/* SET SLAVE ADDRESS IN TWDR */
+		TWDR = ( copy_u8SlaveAddress << 1 ) ;
+ 324:	e3 e2       	ldi	r30, 0x23	; 35
+ 326:	f0 e0       	ldi	r31, 0x00	; 0
+ 328:	89 81       	ldd	r24, Y+1	; 0x01
+ 32a:	88 0f       	add	r24, r24
+ 32c:	80 83       	st	Z, r24
+
+												/* SET OPERATION AS READ OPERATION */
+
+		SET_BIT(TWDR,0) ;
+ 32e:	a3 e2       	ldi	r26, 0x23	; 35
+ 330:	b0 e0       	ldi	r27, 0x00	; 0
+ 332:	e3 e2       	ldi	r30, 0x23	; 35
+ 334:	f0 e0       	ldi	r31, 0x00	; 0
+ 336:	80 81       	ld	r24, Z
+ 338:	81 60       	ori	r24, 0x01	; 1
+ 33a:	8c 93       	st	X, r24
+
+												/* TWI ENABLING */
+
+		SET_BIT(TWCR,TWCR_TWEN) ;
+ 33c:	a6 e5       	ldi	r26, 0x56	; 86
+ 33e:	b0 e0       	ldi	r27, 0x00	; 0
+ 340:	e6 e5       	ldi	r30, 0x56	; 86
+ 342:	f0 e0       	ldi	r31, 0x00	; 0
+ 344:	80 81       	ld	r24, Z
+ 346:	84 60       	ori	r24, 0x04	; 4
+ 348:	8c 93       	st	X, r24
+
+												/* WAIT UNTIL TWINT FLAG RAISED */
+
+		while ( ( GET_BIT(TWCR,TWCR_TWINT ) ) != 1 ) ;
+ 34a:	e6 e5       	ldi	r30, 0x56	; 86
+ 34c:	f0 e0       	ldi	r31, 0x00	; 0
+ 34e:	80 81       	ld	r24, Z
+ 350:	88 1f       	adc	r24, r24
+ 352:	88 27       	eor	r24, r24
+ 354:	88 1f       	adc	r24, r24
+ 356:	81 30       	cpi	r24, 0x01	; 1
+ 358:	c1 f7       	brne	.-16     	; 0x34a <TWI_voidSendSlaveAddressWithRead+0x32>
+
+												/* CLEAR TWINT FLAG */
+
+		SET_BIT(TWCR,TWCR_TWINT) ; 							//	THIS FLAG IS CLEARING WITH SETTING IT NOT CLEARING IT AS USUAL
+ 35a:	a6 e5       	ldi	r26, 0x56	; 86
+ 35c:	b0 e0       	ldi	r27, 0x00	; 0
+ 35e:	e6 e5       	ldi	r30, 0x56	; 86
+ 360:	f0 e0       	ldi	r31, 0x00	; 0
+ 362:	80 81       	ld	r24, Z
+ 364:	80 68       	ori	r24, 0x80	; 128
+ 366:	8c 93       	st	X, r24
+	}
+ 368:	0f 90       	pop	r0
+ 36a:	cf 91       	pop	r28
+ 36c:	df 91       	pop	r29
+ 36e:	08 95       	ret
+
+00000370 <TWI_voidMasterWriteDataByte>:
+
+	uint8 TWI_voidMasterWriteDataByte			( uint8 copy_u8DataByte )
+	{
+ 370:	df 93       	push	r29
+ 372:	cf 93       	push	r28
+ 374:	00 d0       	rcall	.+0      	; 0x376 <TWI_voidMasterWriteDataByte+0x6>
+ 376:	cd b7       	in	r28, 0x3d	; 61
+ 378:	de b7       	in	r29, 0x3e	; 62
+ 37a:	8a 83       	std	Y+2, r24	; 0x02
+		uint8 Local_u8ErrorState = 0 ;
+ 37c:	19 82       	std	Y+1, r1	; 0x01
+		if ( ( GET_BIT(TWCR,TWCR_TWEA)) == 0u )
+ 37e:	e6 e5       	ldi	r30, 0x56	; 86
+ 380:	f0 e0       	ldi	r31, 0x00	; 0
+ 382:	80 81       	ld	r24, Z
+ 384:	82 95       	swap	r24
+ 386:	86 95       	lsr	r24
+ 388:	86 95       	lsr	r24
+ 38a:	83 70       	andi	r24, 0x03	; 3
+ 38c:	88 2f       	mov	r24, r24
+ 38e:	90 e0       	ldi	r25, 0x00	; 0
+ 390:	81 70       	andi	r24, 0x01	; 1
+ 392:	90 70       	andi	r25, 0x00	; 0
+ 394:	00 97       	sbiw	r24, 0x00	; 0
+ 396:	19 f4       	brne	.+6      	; 0x39e <TWI_voidMasterWriteDataByte+0x2e>
+		{
+			Local_u8ErrorState = ADDRESS_N_ACK_ERR ; 						// NEGATIVE ACKNOWLAGE RETURN
+ 398:	87 e0       	ldi	r24, 0x07	; 7
+ 39a:	89 83       	std	Y+1, r24	; 0x01
+ 39c:	3c c0       	rjmp	.+120    	; 0x416 <TWI_voidMasterWriteDataByte+0xa6>
+		}
+		else if ( ( GET_BIT(TWCR,TWCR_TWEA)) == 1u)
+ 39e:	e6 e5       	ldi	r30, 0x56	; 86
+ 3a0:	f0 e0       	ldi	r31, 0x00	; 0
+ 3a2:	80 81       	ld	r24, Z
+ 3a4:	82 95       	swap	r24
+ 3a6:	86 95       	lsr	r24
+ 3a8:	86 95       	lsr	r24
+ 3aa:	83 70       	andi	r24, 0x03	; 3
+ 3ac:	88 2f       	mov	r24, r24
+ 3ae:	90 e0       	ldi	r25, 0x00	; 0
+ 3b0:	81 70       	andi	r24, 0x01	; 1
+ 3b2:	90 70       	andi	r25, 0x00	; 0
+ 3b4:	88 23       	and	r24, r24
+ 3b6:	79 f1       	breq	.+94     	; 0x416 <TWI_voidMasterWriteDataByte+0xa6>
+		{
+			TWDR = copy_u8DataByte ; 								// SET DATA IN TWDR
+ 3b8:	e3 e2       	ldi	r30, 0x23	; 35
+ 3ba:	f0 e0       	ldi	r31, 0x00	; 0
+ 3bc:	8a 81       	ldd	r24, Y+2	; 0x02
+ 3be:	80 83       	st	Z, r24
+
+												/* TWI ENABLING */
+
+			SET_BIT(TWCR,TWCR_TWEN) ;
+ 3c0:	a6 e5       	ldi	r26, 0x56	; 86
+ 3c2:	b0 e0       	ldi	r27, 0x00	; 0
+ 3c4:	e6 e5       	ldi	r30, 0x56	; 86
+ 3c6:	f0 e0       	ldi	r31, 0x00	; 0
+ 3c8:	80 81       	ld	r24, Z
+ 3ca:	84 60       	ori	r24, 0x04	; 4
+ 3cc:	8c 93       	st	X, r24
+
+			if ( ( GET_BIT(TWCR,TWCR_TWEA)) == 0u )
+ 3ce:	e6 e5       	ldi	r30, 0x56	; 86
+ 3d0:	f0 e0       	ldi	r31, 0x00	; 0
+ 3d2:	80 81       	ld	r24, Z
+ 3d4:	82 95       	swap	r24
+ 3d6:	86 95       	lsr	r24
+ 3d8:	86 95       	lsr	r24
+ 3da:	83 70       	andi	r24, 0x03	; 3
+ 3dc:	88 2f       	mov	r24, r24
+ 3de:	90 e0       	ldi	r25, 0x00	; 0
+ 3e0:	81 70       	andi	r24, 0x01	; 1
+ 3e2:	90 70       	andi	r25, 0x00	; 0
+ 3e4:	00 97       	sbiw	r24, 0x00	; 0
+ 3e6:	19 f4       	brne	.+6      	; 0x3ee <TWI_voidMasterWriteDataByte+0x7e>
+			{
+				Local_u8ErrorState = DATA_N_ACK_ERR ; 						// NEGATIVE ACKNOWLAGE RETURN
+ 3e8:	88 e0       	ldi	r24, 0x08	; 8
+ 3ea:	89 83       	std	Y+1, r24	; 0x01
+ 3ec:	14 c0       	rjmp	.+40     	; 0x416 <TWI_voidMasterWriteDataByte+0xa6>
+			}
+			else if ( ( GET_BIT(TWCR,TWCR_TWEA)) == 1u )
+ 3ee:	e6 e5       	ldi	r30, 0x56	; 86
+ 3f0:	f0 e0       	ldi	r31, 0x00	; 0
+ 3f2:	80 81       	ld	r24, Z
+ 3f4:	82 95       	swap	r24
+ 3f6:	86 95       	lsr	r24
+ 3f8:	86 95       	lsr	r24
+ 3fa:	83 70       	andi	r24, 0x03	; 3
+ 3fc:	88 2f       	mov	r24, r24
+ 3fe:	90 e0       	ldi	r25, 0x00	; 0
+ 400:	81 70       	andi	r24, 0x01	; 1
+ 402:	90 70       	andi	r25, 0x00	; 0
+ 404:	88 23       	and	r24, r24
+ 406:	39 f0       	breq	.+14     	; 0x416 <TWI_voidMasterWriteDataByte+0xa6>
+			{
+												/* CLEAR TWINT FLAG */
+
+				SET_BIT(TWCR,TWCR_TWINT) ; 							//	THIS FLAG IS CLEARING WITH SETTING IT NOT CLEARING IT AS USUAL
+ 408:	a6 e5       	ldi	r26, 0x56	; 86
+ 40a:	b0 e0       	ldi	r27, 0x00	; 0
+ 40c:	e6 e5       	ldi	r30, 0x56	; 86
+ 40e:	f0 e0       	ldi	r31, 0x00	; 0
+ 410:	80 81       	ld	r24, Z
+ 412:	80 68       	ori	r24, 0x80	; 128
+ 414:	8c 93       	st	X, r24
+			else
+			{
+				// DO NOTHING
+			}
+		}
+		return Local_u8ErrorState ;
+ 416:	89 81       	ldd	r24, Y+1	; 0x01
+	}
+ 418:	0f 90       	pop	r0
+ 41a:	0f 90       	pop	r0
+ 41c:	cf 91       	pop	r28
+ 41e:	df 91       	pop	r29
+ 420:	08 95       	ret
+
+00000422 <TWI_voidMasterReadDataByte>:
+
+	uint8 TWI_voidMasterReadDataByte			( uint8* copy_u8DataByte )
+	{
+ 422:	df 93       	push	r29
+ 424:	cf 93       	push	r28
+ 426:	00 d0       	rcall	.+0      	; 0x428 <TWI_voidMasterReadDataByte+0x6>
+ 428:	0f 92       	push	r0
+ 42a:	cd b7       	in	r28, 0x3d	; 61
+ 42c:	de b7       	in	r29, 0x3e	; 62
+ 42e:	9b 83       	std	Y+3, r25	; 0x03
+ 430:	8a 83       	std	Y+2, r24	; 0x02
+		uint8 Local_u8ErrorState = 0 ;
+ 432:	19 82       	std	Y+1, r1	; 0x01
+		if ( ( GET_BIT(TWCR,TWCR_TWEA)) == 0u )
+ 434:	e6 e5       	ldi	r30, 0x56	; 86
+ 436:	f0 e0       	ldi	r31, 0x00	; 0
+ 438:	80 81       	ld	r24, Z
+ 43a:	82 95       	swap	r24
+ 43c:	86 95       	lsr	r24
+ 43e:	86 95       	lsr	r24
+ 440:	83 70       	andi	r24, 0x03	; 3
+ 442:	88 2f       	mov	r24, r24
+ 444:	90 e0       	ldi	r25, 0x00	; 0
+ 446:	81 70       	andi	r24, 0x01	; 1
+ 448:	90 70       	andi	r25, 0x00	; 0
+ 44a:	00 97       	sbiw	r24, 0x00	; 0
+ 44c:	19 f4       	brne	.+6      	; 0x454 <TWI_voidMasterReadDataByte+0x32>
+		{
+			Local_u8ErrorState = ADDRESS_N_ACK_ERR ; 						// NEGATIVE ACKNOWLAGE RETURN
+ 44e:	87 e0       	ldi	r24, 0x07	; 7
+ 450:	89 83       	std	Y+1, r24	; 0x01
+ 452:	37 c0       	rjmp	.+110    	; 0x4c2 <TWI_voidMasterReadDataByte+0xa0>
+		}
+		else if ( ( GET_BIT(TWCR,TWCR_TWEA)) == 1u)
+ 454:	e6 e5       	ldi	r30, 0x56	; 86
+ 456:	f0 e0       	ldi	r31, 0x00	; 0
+ 458:	80 81       	ld	r24, Z
+ 45a:	82 95       	swap	r24
+ 45c:	86 95       	lsr	r24
+ 45e:	86 95       	lsr	r24
+ 460:	83 70       	andi	r24, 0x03	; 3
+ 462:	88 2f       	mov	r24, r24
+ 464:	90 e0       	ldi	r25, 0x00	; 0
+ 466:	81 70       	andi	r24, 0x01	; 1
+ 468:	90 70       	andi	r25, 0x00	; 0
+ 46a:	88 23       	and	r24, r24
+ 46c:	51 f1       	breq	.+84     	; 0x4c2 <TWI_voidMasterReadDataByte+0xa0>
+		{
+			*copy_u8DataByte = TWDR ; 								// SET DATA IN TWDR
+ 46e:	e3 e2       	ldi	r30, 0x23	; 35
+ 470:	f0 e0       	ldi	r31, 0x00	; 0
+ 472:	80 81       	ld	r24, Z
+ 474:	ea 81       	ldd	r30, Y+2	; 0x02
+ 476:	fb 81       	ldd	r31, Y+3	; 0x03
+ 478:	80 83       	st	Z, r24
+
+			if ( ( GET_BIT(TWCR,TWCR_TWEA)) == 0u )
+ 47a:	e6 e5       	ldi	r30, 0x56	; 86
+ 47c:	f0 e0       	ldi	r31, 0x00	; 0
+ 47e:	80 81       	ld	r24, Z
+ 480:	82 95       	swap	r24
+ 482:	86 95       	lsr	r24
+ 484:	86 95       	lsr	r24
+ 486:	83 70       	andi	r24, 0x03	; 3
+ 488:	88 2f       	mov	r24, r24
+ 48a:	90 e0       	ldi	r25, 0x00	; 0
+ 48c:	81 70       	andi	r24, 0x01	; 1
+ 48e:	90 70       	andi	r25, 0x00	; 0
+ 490:	00 97       	sbiw	r24, 0x00	; 0
+ 492:	19 f4       	brne	.+6      	; 0x49a <TWI_voidMasterReadDataByte+0x78>
+			{
+				Local_u8ErrorState = DATA_N_ACK_ERR ; 						// NEGATIVE ACKNOWLAGE RETURN
+ 494:	88 e0       	ldi	r24, 0x08	; 8
+ 496:	89 83       	std	Y+1, r24	; 0x01
+ 498:	14 c0       	rjmp	.+40     	; 0x4c2 <TWI_voidMasterReadDataByte+0xa0>
+			}
+			else if ( ( GET_BIT(TWCR,TWCR_TWEA)) == 1u )
+ 49a:	e6 e5       	ldi	r30, 0x56	; 86
+ 49c:	f0 e0       	ldi	r31, 0x00	; 0
+ 49e:	80 81       	ld	r24, Z
+ 4a0:	82 95       	swap	r24
+ 4a2:	86 95       	lsr	r24
+ 4a4:	86 95       	lsr	r24
+ 4a6:	83 70       	andi	r24, 0x03	; 3
+ 4a8:	88 2f       	mov	r24, r24
+ 4aa:	90 e0       	ldi	r25, 0x00	; 0
+ 4ac:	81 70       	andi	r24, 0x01	; 1
+ 4ae:	90 70       	andi	r25, 0x00	; 0
+ 4b0:	88 23       	and	r24, r24
+ 4b2:	39 f0       	breq	.+14     	; 0x4c2 <TWI_voidMasterReadDataByte+0xa0>
+			{
+												/* CLEAR TWINT FLAG */
+
+				SET_BIT(TWCR,TWCR_TWINT) ; 							//	THIS FLAG IS CLEARING WITH SETTING IT NOT CLEARING IT AS USUAL
+ 4b4:	a6 e5       	ldi	r26, 0x56	; 86
+ 4b6:	b0 e0       	ldi	r27, 0x00	; 0
+ 4b8:	e6 e5       	ldi	r30, 0x56	; 86
+ 4ba:	f0 e0       	ldi	r31, 0x00	; 0
+ 4bc:	80 81       	ld	r24, Z
+ 4be:	80 68       	ori	r24, 0x80	; 128
+ 4c0:	8c 93       	st	X, r24
+			else
+			{
+				// DO NOTHING
+			}
+		}
+		return Local_u8ErrorState ;
+ 4c2:	89 81       	ldd	r24, Y+1	; 0x01
+	}
+ 4c4:	0f 90       	pop	r0
+ 4c6:	0f 90       	pop	r0
+ 4c8:	0f 90       	pop	r0
+ 4ca:	cf 91       	pop	r28
+ 4cc:	df 91       	pop	r29
+ 4ce:	08 95       	ret
+
+000004d0 <TWI_voidSendStopCondition>:
+
+	void TWI_voidSendStopCondition				( void )
+	{
+ 4d0:	df 93       	push	r29
+ 4d2:	cf 93       	push	r28
+ 4d4:	cd b7       	in	r28, 0x3d	; 61
+ 4d6:	de b7       	in	r29, 0x3e	; 62
+												/* SEND STOP CONDITION */
+
+		SET_BIT(TWCR,TWCR_TWSTO) ;
+ 4d8:	a6 e5       	ldi	r26, 0x56	; 86
+ 4da:	b0 e0       	ldi	r27, 0x00	; 0
+ 4dc:	e6 e5       	ldi	r30, 0x56	; 86
+ 4de:	f0 e0       	ldi	r31, 0x00	; 0
+ 4e0:	80 81       	ld	r24, Z
+ 4e2:	80 61       	ori	r24, 0x10	; 16
+ 4e4:	8c 93       	st	X, r24
+
+												/* TWI ENABLING */
+
+		SET_BIT(TWCR,TWCR_TWEN) ;
+ 4e6:	a6 e5       	ldi	r26, 0x56	; 86
+ 4e8:	b0 e0       	ldi	r27, 0x00	; 0
+ 4ea:	e6 e5       	ldi	r30, 0x56	; 86
+ 4ec:	f0 e0       	ldi	r31, 0x00	; 0
+ 4ee:	80 81       	ld	r24, Z
+ 4f0:	84 60       	ori	r24, 0x04	; 4
+ 4f2:	8c 93       	st	X, r24
+
+												/* WAIT UNTIL TWINT FLAG RAISED */
+
+		while ( ( GET_BIT(TWCR,TWCR_TWINT ) ) != 1 ) ;
+ 4f4:	e6 e5       	ldi	r30, 0x56	; 86
+ 4f6:	f0 e0       	ldi	r31, 0x00	; 0
+ 4f8:	80 81       	ld	r24, Z
+ 4fa:	88 1f       	adc	r24, r24
+ 4fc:	88 27       	eor	r24, r24
+ 4fe:	88 1f       	adc	r24, r24
+ 500:	81 30       	cpi	r24, 0x01	; 1
+ 502:	c1 f7       	brne	.-16     	; 0x4f4 <TWI_voidSendStopCondition+0x24>
+
+												/* CLEAR TWINT FLAG */
+
+		SET_BIT(TWCR,TWCR_TWINT) ; 							//	THIS FLAG IS CLEARING WITH SETTING IT NOT CLEARING IT AS USUAL
+ 504:	a6 e5       	ldi	r26, 0x56	; 86
+ 506:	b0 e0       	ldi	r27, 0x00	; 0
+ 508:	e6 e5       	ldi	r30, 0x56	; 86
+ 50a:	f0 e0       	ldi	r31, 0x00	; 0
+ 50c:	80 81       	ld	r24, Z
+ 50e:	80 68       	ori	r24, 0x80	; 128
+ 510:	8c 93       	st	X, r24
+
+
+	}
+ 512:	cf 91       	pop	r28
+ 514:	df 91       	pop	r29
+ 516:	08 95       	ret
+
+00000518 <TWI_u8SetCallBack>:
+
+
+	uint8 TWI_u8SetCallBack (  void(*copy_pvNotification)(void) )
+
+		{
+ 518:	df 93       	push	r29
+ 51a:	cf 93       	push	r28
+ 51c:	00 d0       	rcall	.+0      	; 0x51e <TWI_u8SetCallBack+0x6>
+ 51e:	0f 92       	push	r0
+ 520:	cd b7       	in	r28, 0x3d	; 61
+ 522:	de b7       	in	r29, 0x3e	; 62
+ 524:	9b 83       	std	Y+3, r25	; 0x03
+ 526:	8a 83       	std	Y+2, r24	; 0x02
+			uint8 Local_u8ErrorState = OK ;
+ 528:	19 82       	std	Y+1, r1	; 0x01
+			if (  copy_pvNotification != NULL  )
+ 52a:	8a 81       	ldd	r24, Y+2	; 0x02
+ 52c:	9b 81       	ldd	r25, Y+3	; 0x03
+ 52e:	00 97       	sbiw	r24, 0x00	; 0
+ 530:	39 f0       	breq	.+14     	; 0x540 <TWI_u8SetCallBack+0x28>
+			{
+						/* CONVERT THE NOTIFICATION FUNCTION LOCAL VARIABLES TO GLOBAL */
+
+				TWI_pvNotificationFunc = copy_pvNotification ;
+ 532:	8a 81       	ldd	r24, Y+2	; 0x02
+ 534:	9b 81       	ldd	r25, Y+3	; 0x03
+ 536:	90 93 61 00 	sts	0x0061, r25
+ 53a:	80 93 60 00 	sts	0x0060, r24
+ 53e:	02 c0       	rjmp	.+4      	; 0x544 <TWI_u8SetCallBack+0x2c>
+			}
+			else
+			{
+				Local_u8ErrorState = NULL_PTR ;
+ 540:	82 e0       	ldi	r24, 0x02	; 2
+ 542:	89 83       	std	Y+1, r24	; 0x01
+			}
+
+			return Local_u8ErrorState ;
+ 544:	89 81       	ldd	r24, Y+1	; 0x01
+		}
+ 546:	0f 90       	pop	r0
+ 548:	0f 90       	pop	r0
+ 54a:	0f 90       	pop	r0
+ 54c:	cf 91       	pop	r28
+ 54e:	df 91       	pop	r29
+ 550:	08 95       	ret
+
+00000552 <__vector_19>:
+								/* Two-wire Serial Interface ISR */
+
+	void __vector_19 ( void )			__attribute__((signal)) ;
+	void __vector_19 ( void )
+	{
+ 552:	1f 92       	push	r1
+ 554:	0f 92       	push	r0
+ 556:	0f b6       	in	r0, 0x3f	; 63
+ 558:	0f 92       	push	r0
+ 55a:	11 24       	eor	r1, r1
+ 55c:	2f 93       	push	r18
+ 55e:	3f 93       	push	r19
+ 560:	4f 93       	push	r20
+ 562:	5f 93       	push	r21
+ 564:	6f 93       	push	r22
+ 566:	7f 93       	push	r23
+ 568:	8f 93       	push	r24
+ 56a:	9f 93       	push	r25
+ 56c:	af 93       	push	r26
+ 56e:	bf 93       	push	r27
+ 570:	ef 93       	push	r30
+ 572:	ff 93       	push	r31
+ 574:	df 93       	push	r29
+ 576:	cf 93       	push	r28
+ 578:	cd b7       	in	r28, 0x3d	; 61
+ 57a:	de b7       	in	r29, 0x3e	; 62
+
+	if ( TWI_pvNotificationFunc != NULL )
+ 57c:	80 91 60 00 	lds	r24, 0x0060
+ 580:	90 91 61 00 	lds	r25, 0x0061
+ 584:	00 97       	sbiw	r24, 0x00	; 0
+ 586:	29 f0       	breq	.+10     	; 0x592 <__vector_19+0x40>
+	{
+	TWI_pvNotificationFunc() ;
+ 588:	e0 91 60 00 	lds	r30, 0x0060
+ 58c:	f0 91 61 00 	lds	r31, 0x0061
+ 590:	09 95       	icall
+	else
+	{
+	// DO NOTHING
+	}
+
+	}
+ 592:	cf 91       	pop	r28
+ 594:	df 91       	pop	r29
+ 596:	ff 91       	pop	r31
+ 598:	ef 91       	pop	r30
+ 59a:	bf 91       	pop	r27
+ 59c:	af 91       	pop	r26
+ 59e:	9f 91       	pop	r25
+ 5a0:	8f 91       	pop	r24
+ 5a2:	7f 91       	pop	r23
+ 5a4:	6f 91       	pop	r22
+ 5a6:	5f 91       	pop	r21
+ 5a8:	4f 91       	pop	r20
+ 5aa:	3f 91       	pop	r19
+ 5ac:	2f 91       	pop	r18
+ 5ae:	0f 90       	pop	r0
+ 5b0:	0f be       	out	0x3f, r0	; 63
+ 5b2:	0f 90       	pop	r0
+ 5b4:	1f 90       	pop	r1
+ 5b6:	18 95       	reti
+
+000005b8 <main>:
+#include <util/delay.h>
+
+#include "TWI_Interface.h"
+
+void main ()
+{
+ 5b8:	df 93       	push	r29
+ 5ba:	cf 93       	push	r28
+ 5bc:	cd b7       	in	r28, 0x3d	; 61
+ 5be:	de b7       	in	r29, 0x3e	; 62
+
+	TWI_voidMasterInit(1U) ;
+ 5c0:	81 e0       	ldi	r24, 0x01	; 1
+ 5c2:	0e 94 d9 00 	call	0x1b2	; 0x1b2 <TWI_voidMasterInit>
+
+	TWI_voidSendStartCondition();
+ 5c6:	0e 94 3a 01 	call	0x274	; 0x274 <TWI_voidSendStartCondition>
+
+	TWI_voidSendSlaveAddressWithWrite(2U);
+ 5ca:	82 e0       	ldi	r24, 0x02	; 2
+ 5cc:	0e 94 60 01 	call	0x2c0	; 0x2c0 <TWI_voidSendSlaveAddressWithWrite>
+
+	TWI_voidMasterWriteDataByte(7U) ;
+ 5d0:	87 e0       	ldi	r24, 0x07	; 7
+ 5d2:	0e 94 b8 01 	call	0x370	; 0x370 <TWI_voidMasterWriteDataByte>
+
+	TWI_voidSendStopCondition() ;
+ 5d6:	0e 94 68 02 	call	0x4d0	; 0x4d0 <TWI_voidSendStopCondition>
+ 5da:	ff cf       	rjmp	.-2      	; 0x5da <main+0x22>
+
+000005dc <__mulsi3>:
+ 5dc:	62 9f       	mul	r22, r18
+ 5de:	d0 01       	movw	r26, r0
+ 5e0:	73 9f       	mul	r23, r19
+ 5e2:	f0 01       	movw	r30, r0
+ 5e4:	82 9f       	mul	r24, r18
+ 5e6:	e0 0d       	add	r30, r0
+ 5e8:	f1 1d       	adc	r31, r1
+ 5ea:	64 9f       	mul	r22, r20
+ 5ec:	e0 0d       	add	r30, r0
+ 5ee:	f1 1d       	adc	r31, r1
+ 5f0:	92 9f       	mul	r25, r18
+ 5f2:	f0 0d       	add	r31, r0
+ 5f4:	83 9f       	mul	r24, r19
+ 5f6:	f0 0d       	add	r31, r0
+ 5f8:	74 9f       	mul	r23, r20
+ 5fa:	f0 0d       	add	r31, r0
+ 5fc:	65 9f       	mul	r22, r21
+ 5fe:	f0 0d       	add	r31, r0
+ 600:	99 27       	eor	r25, r25
+ 602:	72 9f       	mul	r23, r18
+ 604:	b0 0d       	add	r27, r0
+ 606:	e1 1d       	adc	r30, r1
+ 608:	f9 1f       	adc	r31, r25
+ 60a:	63 9f       	mul	r22, r19
+ 60c:	b0 0d       	add	r27, r0
+ 60e:	e1 1d       	adc	r30, r1
+ 610:	f9 1f       	adc	r31, r25
+ 612:	bd 01       	movw	r22, r26
+ 614:	cf 01       	movw	r24, r30
+ 616:	11 24       	eor	r1, r1
+ 618:	08 95       	ret
+
+0000061a <__divmodsi4>:
+ 61a:	97 fb       	bst	r25, 7
+ 61c:	09 2e       	mov	r0, r25
+ 61e:	05 26       	eor	r0, r21
+ 620:	0e d0       	rcall	.+28     	; 0x63e <__divmodsi4_neg1>
+ 622:	57 fd       	sbrc	r21, 7
+ 624:	04 d0       	rcall	.+8      	; 0x62e <__divmodsi4_neg2>
+ 626:	14 d0       	rcall	.+40     	; 0x650 <__udivmodsi4>
+ 628:	0a d0       	rcall	.+20     	; 0x63e <__divmodsi4_neg1>
+ 62a:	00 1c       	adc	r0, r0
+ 62c:	38 f4       	brcc	.+14     	; 0x63c <__divmodsi4_exit>
+
+0000062e <__divmodsi4_neg2>:
+ 62e:	50 95       	com	r21
+ 630:	40 95       	com	r20
+ 632:	30 95       	com	r19
+ 634:	21 95       	neg	r18
+ 636:	3f 4f       	sbci	r19, 0xFF	; 255
+ 638:	4f 4f       	sbci	r20, 0xFF	; 255
+ 63a:	5f 4f       	sbci	r21, 0xFF	; 255
+
+0000063c <__divmodsi4_exit>:
+ 63c:	08 95       	ret
+
+0000063e <__divmodsi4_neg1>:
+ 63e:	f6 f7       	brtc	.-4      	; 0x63c <__divmodsi4_exit>
+ 640:	90 95       	com	r25
+ 642:	80 95       	com	r24
+ 644:	70 95       	com	r23
+ 646:	61 95       	neg	r22
+ 648:	7f 4f       	sbci	r23, 0xFF	; 255
+ 64a:	8f 4f       	sbci	r24, 0xFF	; 255
+ 64c:	9f 4f       	sbci	r25, 0xFF	; 255
+ 64e:	08 95       	ret
+
+00000650 <__udivmodsi4>:
+ 650:	a1 e2       	ldi	r26, 0x21	; 33
+ 652:	1a 2e       	mov	r1, r26
+ 654:	aa 1b       	sub	r26, r26
+ 656:	bb 1b       	sub	r27, r27
+ 658:	fd 01       	movw	r30, r26
+ 65a:	0d c0       	rjmp	.+26     	; 0x676 <__udivmodsi4_ep>
+
+0000065c <__udivmodsi4_loop>:
+ 65c:	aa 1f       	adc	r26, r26
+ 65e:	bb 1f       	adc	r27, r27
+ 660:	ee 1f       	adc	r30, r30
+ 662:	ff 1f       	adc	r31, r31
+ 664:	a2 17       	cp	r26, r18
+ 666:	b3 07       	cpc	r27, r19
+ 668:	e4 07       	cpc	r30, r20
+ 66a:	f5 07       	cpc	r31, r21
+ 66c:	20 f0       	brcs	.+8      	; 0x676 <__udivmodsi4_ep>
+ 66e:	a2 1b       	sub	r26, r18
+ 670:	b3 0b       	sbc	r27, r19
+ 672:	e4 0b       	sbc	r30, r20
+ 674:	f5 0b       	sbc	r31, r21
+
+00000676 <__udivmodsi4_ep>:
+ 676:	66 1f       	adc	r22, r22
+ 678:	77 1f       	adc	r23, r23
+ 67a:	88 1f       	adc	r24, r24
+ 67c:	99 1f       	adc	r25, r25
+ 67e:	1a 94       	dec	r1
+ 680:	69 f7       	brne	.-38     	; 0x65c <__udivmodsi4_loop>
+ 682:	60 95       	com	r22
+ 684:	70 95       	com	r23
+ 686:	80 95       	com	r24
+ 688:	90 95       	com	r25
+ 68a:	9b 01       	movw	r18, r22
+ 68c:	ac 01       	movw	r20, r24
+ 68e:	bd 01       	movw	r22, r26
+ 690:	cf 01       	movw	r24, r30
+ 692:	08 95       	ret
+
+00000694 <_exit>:
+ 694:	f8 94       	cli
+
+00000696 <__stop_program>:
+ 696:	ff cf       	rjmp	.-2      	; 0x696 <__stop_program>

@@ -1,0 +1,10 @@
+avrpaths//systempath/AVRDUDE=
+avrpaths//systempath/AVRGCC=
+avrpaths//systempath/AVRINCLUDE=
+avrpaths//systempath/MAKE=
+avrpaths//systempath/PDFPATH=
+avrpaths/AVRDUDE=D\:\\Embedded_System\\Diploma 2023\\Tools\\AVR Tools\\SDK\\SDK_Win_64\\SDK_Win_64\\WinAVR\\bin
+avrpaths/AVRGCC=D\:\\Embedded_System\\Diploma 2023\\Tools\\AVR Tools\\SDK\\SDK_Win_64\\SDK_Win_64\\WinAVR\\bin
+avrpaths/AVRINCLUDE=D\:\\Embedded_System\\Diploma 2023\\Tools\\AVR Tools\\SDK\\SDK_Win_64\\SDK_Win_64\\WinAVR\\avr\\include
+avrpaths/MAKE=D\:\\Embedded_System\\Diploma 2023\\Tools\\AVR Tools\\SDK\\SDK_Win_64\\SDK_Win_64\\WinAVR\\utils\\bin
+eclipse.preferences.version=1

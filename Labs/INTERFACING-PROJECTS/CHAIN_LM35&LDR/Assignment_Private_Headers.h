@@ -11,14 +11,24 @@
 
 	void Hamoksha_voidWelcome (void);
 
-	void Hamoksha_voidSleep (void);
+	void CLCD_voidID (void);
 
-	void Hamoksha_voidWakeup (void);
+	void OpenSound (void) ;
 
-	void Hamoksha_voidPlaying (void);
+	void OpenSound2 (void) ;
 
-	void Hamoksha_voidDancing (void);
+	void GreenLED ( void ) ;
 
-	void Hamoksha_voidDeath (void);
+	void RedLED (void) ;
+
+	void DC_Motor (void) ;
+
+	void SystemOFF ( void ) ;
+
+	void LDRCONTROL ( void ) ;
+
+	void LM35CONTROL ( void ) ;
+
+	void SystemShutDown ( void ) ;
 
 #endif /* ASSIGNMENT_PRIVATE_HEADERS_H_ */

@@ -16,6 +16,6 @@
 		*/
 
 
-			#define 	LM35_ADC_CHANNEL	ADC1_SINGLE_ENDED
+			#define 	LM35_ADC_CHANNEL	ADC7_SINGLE_ENDED
 
 #endif

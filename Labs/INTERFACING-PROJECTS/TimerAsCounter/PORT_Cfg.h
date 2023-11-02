@@ -11,10 +11,10 @@
 	#define 		PORTA_PIN6_DIR  		INPUT
 	#define 		PORTA_PIN7_DIR  		INPUT
 	
-	#define 		PORTB_PIN0_DIR  		OUTPUT
+	#define 		PORTB_PIN0_DIR  		INPUT
 	#define 		PORTB_PIN1_DIR  		OUTPUT
 	#define 		PORTB_PIN2_DIR  		OUTPUT
-	#define 		PORTB_PIN3_DIR  		INPUT
+	#define 		PORTB_PIN3_DIR  		OUTPUT
 	#define 		PORTB_PIN4_DIR  		OUTPUT
 	#define 		PORTB_PIN5_DIR  		INPUT
 	#define 		PORTB_PIN6_DIR  		INPUT

@@ -12,9 +12,9 @@
 
 
 #if			CLCD_U8CONNECTION_MODE == FOUR_BIT
-#define 	CLCD_u8D4_PIN 					DIO_PIN0
-#define 	CLCD_u8D5_PIN 					DIO_PIN1
-#define 	CLCD_u8D6_PIN 					DIO_PIN2
+#define 	CLCD_u8D4_PIN 					DIO_PIN1
+#define 	CLCD_u8D5_PIN 					DIO_PIN2
+#define 	CLCD_u8D6_PIN 					DIO_PIN3
 #define 	CLCD_u8D7_PIN 					DIO_PIN4
 #endif
 
