@@ -1,0 +1,35 @@
+11:55:50 **** Build of configuration Debug for project SysTick ****
+make -j16 all 
+arm-none-eabi-gcc -mcpu=cortex-m3 -g3 -c -x assembler-with-cpp -MMD -MP -MF"Startup/startup_stm32f103c8tx.d" -MT"Startup/startup_stm32f103c8tx.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Startup/startup_stm32f103c8tx.o" "../Startup/startup_stm32f103c8tx.s"
+arm-none-eabi-gcc "../Src/GPIO_PROGRAM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/GPIO_PROGRAM.d" -MT"Src/GPIO_PROGRAM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/GPIO_PROGRAM.o"
+arm-none-eabi-gcc "../Src/RCC_PROGRAM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/RCC_PROGRAM.d" -MT"Src/RCC_PROGRAM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/RCC_PROGRAM.o"
+arm-none-eabi-gcc "../Src/SYSTICK_PROGRAM.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/SYSTICK_PROGRAM.d" -MT"Src/SYSTICK_PROGRAM.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/SYSTICK_PROGRAM.o"
+arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/main.o"
+arm-none-eabi-gcc "../Src/syscalls.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/syscalls.d" -MT"Src/syscalls.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/syscalls.o"
+arm-none-eabi-gcc "../Src/sysmem.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Src/sysmem.d" -MT"Src/sysmem.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Src/sysmem.o"
+arm-none-eabi-gcc "../Inc/MAP.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DSTM32 -DSTM32F1 -DSTM32F103C8Tx -DDEBUG -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Inc/MAP.d" -MT"Inc/MAP.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Inc/MAP.o"
+In file included from ../Src/SYSTICK_PROGRAM.c:2:0:
+../Src/SYSTICK_PROGRAM.c: In function 'SysTick_Handler':
+../Inc/BIT_MATH.h:6:51: warning: value computed is not used [-Wunused-value]
+ #define GET_BIT(VAR,BIT_NUM)  (((VAR) >> BIT_NUM) & 1)
+                               ~~~~~~~~~~~~~~~~~~~~^~~~
+../Src/SYSTICK_PROGRAM.c:182:2: note: in expansion of macro 'GET_BIT'
+  GET_BIT(STK_CTRL,STK_CTRL_COUNTFLAG);
+  ^~~~~~~
+arm-none-eabi-gcc -o "SysTick.elf" @"objects.list"   -mcpu=cortex-m3 -T"D:\Embedded_System\Projects\STM32_Projects\SysTick\STM32F103C8TX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SysTick.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: SysTick.elf
+ 
+arm-none-eabi-size   SysTick.elf 
+arm-none-eabi-objdump -h -S  SysTick.elf  > "SysTick.list"
+arm-none-eabi-objcopy  -O binary  SysTick.elf  "SysTick.bin"
+   text	   data	    bss	    dec	    hex	filename
+    648	     12	   1572	   2232	    8b8	SysTick.elf
+Finished building: default.size.stdout
+ 
+Finished building: SysTick.bin
+Finished building: SysTick.list
+ 
+ 
+
+11:55:51 Build Finished. 0 errors, 1 warnings. (took 487ms)
+

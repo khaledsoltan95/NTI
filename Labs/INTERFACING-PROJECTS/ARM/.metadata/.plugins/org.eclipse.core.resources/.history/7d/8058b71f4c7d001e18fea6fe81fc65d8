@@ -1,0 +1,11 @@
+#ifndef SYSTICK_CONFIG_H_
+#define SYSTICK_CONFIG_H_
+
+
+/* CONFIGURATION OPTIONS : 	1- AHB_DIVIDEDBY_8
+ * 							2- AHB
+ */
+#define			SYSTICK_u8CLKSource
+
+
+#endif

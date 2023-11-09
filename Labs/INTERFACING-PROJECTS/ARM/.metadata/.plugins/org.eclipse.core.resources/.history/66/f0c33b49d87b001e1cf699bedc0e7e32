@@ -1,0 +1,10 @@
+#ifndef GPIO_PRV_H
+#define GPIO_PRV_H
+
+#define 	INPUT			00
+#define 	OUTPUT10HZ		01
+#define 	OUTPUT2HZ		10
+#define 	OUTPUT50HZ		11
+
+
+#endif 

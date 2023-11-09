@@ -1,0 +1,8 @@
+#ifndef DMA_REG_H_
+#define DMA_REG_H_
+
+#define				DMA1_BASE_ADDRESS					0x40020000
+
+#define				DMA1_ISR					(*(volatile uint32*)(DMA1_BASE_ADDRESS + 0x40020000))
+
+#endif

@@ -1,0 +1,52 @@
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "ERR_TYPE.h"
+
+#include "SYSTICK_CONFIG.h"
+#include "SYSTICK_PRV.h"
+#include "SYSTICK_REG.h"
+#include "SYSTICK_INTERFACE.h"
+
+void		STK_voidInit						(void)
+{
+								/* SET SYSTICK CLOCK SOURCE */
+#if 		SYSTICK_u8CLKSource == AHB_DIVIDEDBY_8
+	CLR_BIT(STK_CTRL,STK_CTRL_CLKSOURCE) ;
+#elif 		SYSTICK_u8CLKSource == AHB
+	SET_BIT(STK_CTRL,STK_CTRL_CLKSOURCE) ;
+#else
+	#error "NOT VALID SYSTICK_u8CLKSource Configuration"
+#endif
+
+								/* INTERRUP ENABLING */
+#if 		SYSTICK_u8TickIntEnable == ENABLE
+CLR_BIT(STK_CTRL,STK_CTRL_TICKINT) ;
+#elif 		SYSTICK_u8TickIntEnable == DISABLE
+SET_BIT(STK_CTRL,STK_CTRL_TICKINT) ;
+#else
+#error "NOT VALID SYSTICK_u8TickIntEnable Configuration"
+#endif
+
+								/* SYSTICK ENABLING */
+#if 		SYSTICK_u8SysTickEnable == ENABLE
+			CLR_BIT(STK_CTRL,STK_CTRL_ENABLE) ;
+#elif 		SYSTICK_u8SysTickEnable == DISABLE
+			SET_BIT(STK_CTRL,STK_CTRL_ENABLE) ;
+#else
+#error "NOT VALID SYSTICK_u8SysTickEnable Configuration"
+#endif
+}
+
+void		STK_voidSetBusyWait					(uint32	copy_u32Ticks);
+
+void		STK_voidSetIntervalSingle			(uint32	copy_u32Ticks, void (*copy_pFunction)(void));
+
+void		STK_voidSetIntervalPeriodic			(uint32	copy_u32Ticks, void (*copy_pFunction)(void));
+
+void		STK_voidStopInterval				(void);
+
+uint32		STK_u32GetElapsedTime				(void);
+
+uint32		STK_u32GetRemainingTime				(void);
+
+

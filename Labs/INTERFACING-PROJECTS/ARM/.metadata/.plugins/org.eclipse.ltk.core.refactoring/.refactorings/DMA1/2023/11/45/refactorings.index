@@ -1,0 +1,6 @@
+1699360796755	Move 'DMA_CFG.h' to 'Inc'
+1699462428746	Rename resource 'DMA_CFG.h'
+1699462439603	Rename resource 'DMA_INTERFACE.h'
+1699462445521	Rename resource 'DMA_PRV.h'
+1699462452024	Rename resource 'DMA_REG.h'
+1699462471284	Rename resource 'DMA_PROGRAM.c'

@@ -1,0 +1,11 @@
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "ERR_TYPE.h"
+#include "stm"
+#include "GPIO_INTERFACE.h"
+
+int main(void)
+{
+   GPIO_voidInit() ;
+
+}

@@ -1,0 +1,16 @@
+#ifndef DMA_PRV_H_
+#define DMA_PRV_H_
+
+#define 			ENABLE				1u
+#define 			DISABLE				2u
+
+#define 			EIGHT_BITS			1u
+#define 			SIXTEEN_BITS		1u
+#define 			THIRTYTWO_BITS		1u
+
+#define 			LOW					1u
+#define 			MIDIUM				1u
+#define 			HIGH				1u
+#define 			VERY_HIGH			1u
+
+#endif

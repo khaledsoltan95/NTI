@@ -1,0 +1,36 @@
+#ifndef DMA_CFG_H_
+#define DMA_CFG_H_
+
+										/* CHANNEL 7 */
+
+					/* CONFIGURATION OPTIONS : 1- LOW 2- MIDIUM 3- HIGH 4- VERY_HIGH */
+#define 			DMA_u8Channel_7_PerioritySelect				VERY_HIGH
+					/* CONFIGURATION OPTIONS : 1- EIGHT_BITS 2- SIXTEEN_BITS 3- THIRTYTWO_BITS  */
+#define 			DMA_u8Channel_7_PSize						THIRTYTWO_BITS
+#define 			DMA_u8Channel_7_MSize						THIRTYTWO_BITS
+					/* CONFIGURATION OPTIONS : 1- FROM_PERIPHERAL 2- FROM_MEMORY */
+#define 			DMA_u8Channel_7_DIR_Select					FROM_PERIPHERAL
+					/* CONFIGURATION OPTIONS : 1- ENABLE 2- DISABLE */
+#define 			DMA_u8Channel_7_CIRC_Enable					DISABLE
+#define 			DMA_u8Channel_7_MINC_Enable					DISABLE
+#define 			DMA_u8Channel_7_PINC_Enable					DISABLE
+#define 			DMA_u8Channel_7_MEM2MEM_Enable				DISABLE
+#define 			DMA_u8Channel_7_TCIE_Enable					DISABLE
+#define 			DMA_u8Channel_7_HTIE_Enable					DISABLE
+#define 			DMA_u8Channel_7_TEIE_Enable					DISABLE
+#define 			DMA_u8Channel_7_Enable						DISABLE
+
+
+
+
+
+
+#define 			DMA_u8Channel6Enable						DISABLE
+#define 			DMA_u8Channel5Enable						DISABLE
+#define 			DMA_u8Channel4Enable						DISABLE
+#define 			DMA_u8Channel3Enable						DISABLE
+#define 			DMA_u8Channel2Enable						DISABLE
+#define 			DMA_u8Channel1Enable						DISABLE
+
+
+#endif

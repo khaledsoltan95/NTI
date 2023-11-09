@@ -1,0 +1,16 @@
+#ifndef DMA_PRV_H_
+#define DMA_PRV_H_
+
+#define 			ENABLE				1u
+#define 			DISABLE				2u
+
+#define 			ENABLE				1u
+#define 			ENABLE				1u
+#define 			ENABLE				1u
+
+#define 			ENABLE				1u
+#define 			ENABLE				1u
+#define 			ENABLE				1u
+#define 			ENABLE				1u
+
+#endif

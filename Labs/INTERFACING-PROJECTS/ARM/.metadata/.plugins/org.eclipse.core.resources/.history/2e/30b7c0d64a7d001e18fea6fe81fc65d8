@@ -1,0 +1,8 @@
+#ifndef SYSTICK_REG_H_
+#define SYSTICK_REG_H_
+
+#define 			SYSTICK_BASEADDRESS				0xE000E010
+
+#define 			STK_CTRL						(*(volatile uint32*)(SYSTICK_BASEADDRESS +0xE000E010))
+
+#endif /* SYSTICK_REG_H_ */

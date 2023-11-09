@@ -1,0 +1,11 @@
+#ifndef RCC_INTERFACE_H
+#define RCC_INTERFACE_H
+
+
+void 	RCC_voidInit 					(void) ;
+
+uint8 	RCC_u8ClockPeripheralEnable 	(uint32 copy_u32BusID , uint32 copy_u32) ;
+
+uint8 	RCC_u8ClockPeripheralDisable 	(uint32 copy_u32BusID , uint32 copy_u32) ;
+
+#endif 

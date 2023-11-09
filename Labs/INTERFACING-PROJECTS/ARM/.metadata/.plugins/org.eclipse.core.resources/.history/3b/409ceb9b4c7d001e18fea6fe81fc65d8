@@ -1,0 +1,27 @@
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "ERR_TYPE.h"
+
+#include "SYSTICK_CONFIG.h"
+#include "SYSTICK_PRV.h"
+#include "SYSTICK_REG.h"
+#include "SYSTICK_INTERFACE.h"
+
+void		STK_voidInit						(void)
+{
+
+}
+
+void		STK_voidSetBusyWait					(uint32	copy_u32Ticks);
+
+void		STK_voidSetIntervalSingle			(uint32	copy_u32Ticks, void (*copy_pFunction)(void));
+
+void		STK_voidSetIntervalPeriodic			(uint32	copy_u32Ticks, void (*copy_pFunction)(void));
+
+void		STK_voidStopInterval				(void);
+
+uint32		STK_u32GetElapsedTime				(void);
+
+uint32		STK_u32GetRemainingTime				(void);
+
+

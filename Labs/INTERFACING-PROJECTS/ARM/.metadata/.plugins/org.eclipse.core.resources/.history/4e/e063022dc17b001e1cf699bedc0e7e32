@@ -1,0 +1,79 @@
+#ifndef GPIO_REG_H
+#define GPIO_REG_H
+
+#define 	GPIO_PORTA_BASE_ADD			*((volatile uint32*)0x40010800)
+#define 	GPIO_PORTB_BASE_ADD			*((volatile uint32*)0x40010C00)
+#define 	GPIO_PORTC_BASE_ADD			*((volatile uint32*)0x40011000)
+
+
+
+#define 	GPIOA_CRL					*((volatile uint32*)(GPIO_PORTA_BASE_ADD+0x00))
+#define 	GPIOA_CRL_CNF71				31u
+#define 	GPIOA_CRL_CNF70				30u
+#define 	GPIOA_CRL_MODE71			29u
+#define 	GPIOA_CRL_MODE70			28u
+#define 	GPIOA_CRL_CNF61				27u
+#define 	GPIOA_CRL_CNF60				26u
+#define 	GPIOA_CRL_MODE61			25u
+#define 	GPIOA_CRL_MODE60			24u
+#define 	GPIOA_CRL_CNF51				23u
+#define 	GPIOA_CRL_CNF50				22u
+#define 	GPIOA_CRL_MODE51			21u
+#define 	GPIOA_CRL_MODE50			20u
+#define 	GPIOA_CRL_CNF41				19u
+#define 	GPIOA_CRL_CNF40				18u
+#define 	GPIOA_CRL_MODE41			17u
+#define 	GPIOA_CRL_MODE40			16u
+#define 	GPIOA_CRL_CNF31				15u
+#define 	GPIOA_CRL_CNF30				14u
+#define 	GPIOA_CRL_MODE31			13u
+#define 	GPIOA_CRL_MODE30			12u
+#define 	GPIOA_CRL_CNF21				11u
+#define 	GPIOA_CRL_CNF20				10u
+#define 	GPIOA_CRL_MODE21			9u
+#define 	GPIOA_CRL_MODE20			8u
+#define 	GPIOA_CRL_CNF11				7u
+#define 	GPIOA_CRL_CNF10				6u
+#define 	GPIOA_CRL_MODE11			5u
+#define 	GPIOA_CRL_MODE10			4u
+#define 	GPIOA_CRL_CNF01				3u
+#define 	GPIOA_CRL_CNF00				2u
+#define 	GPIOA_CRL_MODE01			1u
+#define 	GPIOA_CRL_MODE00			0u
+
+#define 	GPIOA_CRH					*((volatile uint32*)(GPIO_PORTA_BASE_ADD+0x04))
+#define 	GPIOA_CRH_CNF71				31u
+#define 	GPIOA_CRH_CNF70				30u
+#define 	GPIOA_CRH_MODE71			29u
+#define 	GPIOA_CRH_MODE70			28u
+#define 	GPIOA_CRH_CNF61				27u
+#define 	GPIOA_CRH_CNF60				26u
+#define 	GPIOA_CRH_MODE61			25u
+#define 	GPIOA_CRH_MODE60			24u
+#define 	GPIOA_CRH_CNF51				23u
+#define 	GPIOA_CRH_CNF50				22u
+#define 	GPIOA_CRH_MODE51			21u
+#define 	GPIOA_CRH_MODE50			20u
+#define 	GPIOA_CRH_CNF41				19u
+#define 	GPIOA_CRH_CNF40				18u
+#define 	GPIOA_CRH_MODE41			17u
+#define 	GPIOA_CRH_MODE40			16u
+#define 	GPIOA_CRH_CNF31				15u
+#define 	GPIOA_CRH_CNF30				14u
+#define 	GPIOA_CRH_MODE31			13u
+#define 	GPIOA_CRH_MODE30			12u
+#define 	GPIOA_CRH_CNF21				11u
+#define 	GPIOA_CRH_CNF20				10u
+#define 	GPIOA_CRH_MODE21			9u
+#define 	GPIOA_CRH_MODE20			8u
+#define 	GPIOA_CRH_CNF11				7u
+#define 	GPIOA_CRH_CNF10				6u
+#define 	GPIOA_CRH_MODE11			5u
+#define 	GPIOA_CRH_MODE10			4u
+#define 	GPIOA_CRH_CNF01				3u
+#define 	GPIOA_CRH_CNF00				2u
+#define 	GPIOA_CRH_MODE01			1u
+#define 	GPIOA_CRH_MODE00			0u
+
+
+#endif 

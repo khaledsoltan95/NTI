@@ -1,0 +1,14 @@
+#include "STD_TYPES.h"
+#include "DMA1_INTERFACE.h"
+
+int main(void)
+{
+	ChannelConfig_t obj =
+	{
+			.Enable = 1 ,
+			.HTIE = 1 ,
+			.TCIE = 1 ,
+	};
+
+	DMA1_voidChannelRunTimeInit(Channel1, &obj) ;
+}

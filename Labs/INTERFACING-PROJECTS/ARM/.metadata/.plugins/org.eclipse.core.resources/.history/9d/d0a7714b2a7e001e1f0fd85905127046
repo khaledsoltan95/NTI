@@ -1,0 +1,9 @@
+#ifndef DMA_INTERFACE_H_
+#define DMA_INTERFACE_H_
+
+void	DMA1_voidChannelInit	(void);
+
+void	DMA1_voidChannelStart	(uint32 * copy_u32pSourceAddress ,uint32 * copy_u32pDestinationAddress ,uint16 copy_u16BlockLength);
+
+
+#endif

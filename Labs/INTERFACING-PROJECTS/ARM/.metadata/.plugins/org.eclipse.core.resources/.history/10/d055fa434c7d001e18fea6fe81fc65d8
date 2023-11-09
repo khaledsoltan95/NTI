@@ -1,0 +1,7 @@
+#ifndef SYSTICK_PRV_H_
+#define SYSTICK_PRV_H_
+
+#define			AHB_DIVIDEDBY_8					1u
+#define			AHB								2u
+
+#endif

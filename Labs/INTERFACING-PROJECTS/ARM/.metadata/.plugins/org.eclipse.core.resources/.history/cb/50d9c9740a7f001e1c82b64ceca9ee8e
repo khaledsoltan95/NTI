@@ -1,0 +1,21 @@
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "ERR_TYPE.h"
+
+#include "RCC_INTERFACE.h"
+#include "DMA1_INTERFACE.h"
+
+int main(void)
+{
+
+
+	ChannelConfig_t Test_Config =
+	{
+			.CIRC = 1 ,
+			.DIR = 1 ,
+			.Enable = 1 ,
+			.MEM2MEM = 1 ,
+			.PSIZE = 1 ,
+			.MSIZE = 1
+	};
+}

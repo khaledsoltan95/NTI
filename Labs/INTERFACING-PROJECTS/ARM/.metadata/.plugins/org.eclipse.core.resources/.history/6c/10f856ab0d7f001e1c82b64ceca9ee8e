@@ -1,0 +1,39 @@
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "ERR_TYPE.h"
+
+#include "RCC_INTERFACE.h"
+#include "DMA1_INTERFACE.h"
+
+int main(void)
+{
+	RCC_voidInit() ;
+
+	ChannelConfig_t Test1_Config =
+	{
+			.CIRC = 1 ,
+			.DIR = 1 ,
+			.Enable = 0 ,
+			.MEM2MEM = 1 ,
+			.PSIZE = 1 ,
+			.MSIZE = 1
+	};
+	ChannelConfig_t Test2_Config =
+	{
+			.CIRC = 1 ,
+			.DIR = 1 ,
+			.Enable = 1 ,
+			.MEM2MEM = 1 ,
+			.PSIZE = 1 ,
+			.MSIZE = 1
+	};
+
+	DMA1_voidChannelRunTimeInit(Channel1, &Test1_Config) ;
+	DMA1_voidChannelRunTimeInit(Channel2, &Test2_Config) ;
+	DMA1_voidChannelRunTimeInit(Channel3, &Test1_Config) ;
+	DMA1_voidChannelRunTimeInit(Channel4, &Test2_Config) ;
+	DMA1_voidChannelRunTimeInit(Channel5, &Test1_Config) ;
+	DMA1_voidChannelRunTimeInit(Channel6, &Test2_Config) ;
+	DMA1_voidChannelRunTimeInit(Channel7, &Test1_Config) ;
+
+}

@@ -1,0 +1,8 @@
+SYSTICK_PROGRAM.c:14:7:STK_voidInit	4	static
+SYSTICK_PROGRAM.c:44:8:STK_voidSetBusyWait	24	static
+SYSTICK_PROGRAM.c:70:8:STK_voidSetIntervalSingle	24	static
+SYSTICK_PROGRAM.c:106:8:STK_voidSetIntervalPeriodic	24	static
+SYSTICK_PROGRAM.c:143:7:STK_voidStopInterval	4	static
+SYSTICK_PROGRAM.c:155:9:STK_u32GetElapsedTime	4	static
+SYSTICK_PROGRAM.c:160:9:STK_u32GetRemainingTime	4	static
+SYSTICK_PROGRAM.c:166:6:SysTick_Handler	8	static

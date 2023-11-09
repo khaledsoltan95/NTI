@@ -1,0 +1,76 @@
+#include "STD_TYPES.h"
+#include "BIT_MATH.h"
+#include "ERR_TYPE.h"
+
+#include "RCC_INTERFACE.h"
+#include "GPIO_INTERFACE.h"
+
+//#define RCC_BASE_ADDR    0x40021000
+#define GPIOA_BASE_ADDR  0x40010800
+//#define RCC_APB2ENR  (*(volatile unsigned long *)(RCC_BASE_ADDR + 0x18))
+#define GPIOA_CRL    (*(volatile unsigned long *)(GPIOA_BASE_ADDR + 0x00))
+#define GPIOA_ODR    (*(volatile unsigned long *)(GPIOA_BASE_ADDR + 0x0C))
+int main(void)
+{
+	RCC_u8ClockPeripheralEnable(BUS_RCC_APB2, 2u) ;
+	GPIOA_CRL &= 0x00000000;
+	//RCC_voidInit() ;
+
+	 //GPIOA_CRL |= 0x11111111;
+	//GPIO_voidInit() ;
+
+	//GPIO_U8SetPinDirection(GPIO_PORTA, GPIO_PIN0, GPIO_PIN_OUTPUT_50MHZ);
+
+	while (1)
+	{
+
+	}
+
+}
+/*
+#define RCC_BASE_ADDR    0x40021000
+#define GPIOA_BASE_ADDR  0x40010800
+
+// RCC peripheral registers
+#define RCC_APB2ENR  (*(volatile unsigned long *)(RCC_BASE_ADDR + 0x18))
+
+// GPIOA peripheral registers
+#define GPIOA_CRL    (*(volatile unsigned long *)(GPIOA_BASE_ADDR + 0x00))
+#define GPIOA_ODR    (*(volatile unsigned long *)(GPIOA_BASE_ADDR + 0x0C))
+
+// Delay function
+void delay() {
+    for (int i = 0; i < 500000; i++) {}
+}
+
+int main(void) {
+    // Enable the clock for GPIO Port A
+    RCC_APB2ENR |= 0x00000004;
+
+    // Configure GPIO Port A pins as output pins
+    GPIOA_CRL &= 0xFFFFFFF0;
+    GPIOA_CRL |= 0x00000001;
+
+    while (1) {
+        // Toggle the output of pin 0
+        GPIOA_ODR ^= 0x00000001;
+        delay();
+    }
+}*/
+/*int main()
+{
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_AFIO, ENABLE);
+	RCC_DeInit();						 					// Reset RCC settings to default
+	RCC_HSEConfig(RCC_HSE_ON); 								// Enable the external high-speed oscillator (HSE)
+	RCC_WaitForHSEStartUp(); 								// Wait for the HSE to stabilize
+
+	RCC_PLLConfig(RCC_PLLSource_HSE_Div1, RCC_PLLMul_9); 	// Configure the PLL
+	RCC_PLLCmd(ENABLE); 									// Enable the PLL
+
+	RCC_SYSCLKConfig(RCC_SYSCLKSource_PLLCLK); 				// Set the PLL as the system clock
+
+	RCC_HCLKConfig(RCC_SYSCLK_Div1); 						// Configure the AHB prescaler
+	RCC_PCLK1Config(RCC_HCLK_Div2); 						// Configure the APB1 prescaler
+	RCC_PCLK2Config(RCC_HCLK_Div1); 						// Configure the APB2 prescaler
+}*/
+

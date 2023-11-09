@@ -1,0 +1,43 @@
+#ifndef GPIO_INTERFACE_H
+#define GPIO_INTERFACE_H
+
+
+	typedef enum
+	{
+		GPIO_PORTA ,
+		GPIO_PORTB ,
+		GPIO_PORTC
+	}GPIO_Port_t;
+	typedef enum
+	{
+		GPIO_PIN0 ,
+		GPIO_PIN1 ,
+		GPIO_PIN2 ,
+		GPIO_PIN3 ,
+		GPIO_PIN4 ,
+		GPIO_PIN5 ,
+		GPIO_PIN6 ,
+		GPIO_PIN7
+	}GPIO_Pin_t;
+	typedef enum
+	{
+		GPIO_PIN_INPUT ,
+		GPIO_PIN_OUTPUT
+	}GPIO_PinDir_t;
+	typedef enum
+	{
+		GPIO_PIN_LOW ,
+		GPIO_PIN_HIGH
+	}GPIO_PinVal_t;
+											/* Functions Decleration */
+
+	uint8 DIO_U8SetPinDirection	    (DIO_Port_t copy_Port,	 DIO_Pin_t copy_PinNum,		DIO_PinDir_t copy_Dir);
+	uint8 DIO_U8SetPortDirection	(DIO_Port_t copy_Port,	 uint8 copy_u8PortDir);
+
+	uint8 DIO_U8SetPinValue	        (DIO_Port_t copy_Port,	 DIO_Pin_t copy_PinNum,		DIO_PinVal_t copy_Val);
+	uint8 DIO_U8SetPortValue    	(DIO_Port_t copy_Port,	 uint8 copy_u8PortVal);
+
+	uint8 DIO_u8GetPinValue 		(DIO_Port_t copy_port,   DIO_Pin_t copy_PinNum, 	DIO_PinVal_t* copy_pVal );
+	uint8 DIO_u8TogglePinValue		(DIO_Port_t copy_Port,	 DIO_Pin_t copy_PinNum);
+
+#endif 

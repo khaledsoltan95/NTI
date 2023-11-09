@@ -1,0 +1,24 @@
+#ifndef DMA_PRV_H_
+#define DMA_PRV_H_
+
+#define 			NO_SELECT			0u
+
+#define 			SELECTED			1u
+#define 			NOT_SELECTED		2u
+
+#define 			ENABLE				1u
+#define 			DISABLE				2u
+
+#define 			FROM_PERIPHERAL		1u
+#define 			FROM_MEMORY			2u
+
+#define 			EIGHT_BITS			0u
+#define 			SIXTEEN_BITS		1u
+#define 			THIRTYTWO_BITS		2u
+
+#define 			LOW					0u
+#define 			MIDIUM				1u
+#define 			HIGH				2u
+#define 			VERY_HIGH			3u
+
+#endif

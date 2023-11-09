@@ -1,0 +1,20 @@
+#ifndef GPIO_PRV_H
+#define GPIO_PRV_H
+
+#define 	INPUT								00
+#define 	OUTPUT10HZ							01
+#define 	OUTPUT2HZ							10
+#define 	OUTPUT50HZ							11
+
+#define 	ANALOG								00
+#define 	FLOATING							01
+#define 	PULLEDUP							10
+
+#define 	PUSH_PULL							00
+#define 	OPENDRAIN							01
+#define 	ALTERNATIVEFUNCTIONPUSH_PULL		10
+#define 	ALTERNATIVEFUNCTIONOPENDRAIN		11
+
+
+
+#endif 

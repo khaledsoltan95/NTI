@@ -1,0 +1,13 @@
+/*
+ * SYSTICK_INTERFACE.h
+ *
+ *  Created on: Nov 7, 2023
+ *      Author: khsol
+ */
+
+#ifndef SYSTICK_INTERFACE_H_
+#define SYSTICK_INTERFACE_H_
+
+
+
+#endif /* SYSTICK_INTERFACE_H_ */

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SysTick/Inc/SYSTICK_CONFIG&apos; to &apos;SYSTICK_CONFIG.h&apos;" description="Rename resource &apos;SYSTICK_CONFIG&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Inc/SYSTICK_CONFIG" name="SYSTICK_CONFIG.h" stamp="1699345880154" updateReferences="true"/>
+</session>

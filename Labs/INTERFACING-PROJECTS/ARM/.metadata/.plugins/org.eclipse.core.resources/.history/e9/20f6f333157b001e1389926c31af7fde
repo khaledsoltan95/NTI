@@ -1,0 +1,44 @@
+#ifndef RCC_REG_H
+#define RCC_REG_H
+
+#define 	RCC_BASE_ADD 	*((volatile uint32*)0x40021000)
+
+#define 	RCC_CR			*((volatile uint32*)(RCC_BASE_ADD+0x00))
+
+#define 	RCC_CFGR		*((volatile uint32*)(RCC_BASE_ADD+0x04))
+#define 	RCC_CFGR_R1				31u
+#define 	RCC_CFGR_R2				30u
+#define 	RCC_CFGR_R3				29u
+#define 	RCC_CFGR_R4				28u
+#define 	RCC_CFGR_R5				27u
+#define 	RCC_CFGR_MCO2			26u
+#define 	RCC_CFGR_MCO1			25u
+#define 	RCC_CFGR_MCO0			24u
+#define 	RCC_CFGR_R6				23u
+#define 	RCC_CFGR_USBPRE			22u
+#define 	RCC_CFGR_PLLMUL3		21u
+#define 	RCC_CFGR_PLLMUL2		20u
+#define 	RCC_CFGR_PLLMUL1		19u
+#define 	RCC_CFGR_PLLMUL0		18u
+#define 	RCC_CFGR_PLLXTPRE		17u
+#define 	RCC_CFGR_PLLSRC			16u
+#define 	RCC_CFGR_ADCPRE1		15u
+#define 	RCC_CFGR_ADCPRE0		14u
+#define 	RCC_CFGR_PPRE22			13u
+#define 	RCC_CFGR_PPRE21			12u
+#define 	RCC_CFGR_PPRE20			11u
+#define 	RCC_CFGR_PPRE12			10u
+#define 	RCC_CFGR_PPRE11			9u
+#define 	RCC_CFGR_PPRE10			8u
+#define 	RCC_CFGR_HPRE3			7u
+#define 	RCC_CFGR_HPRE2			6u
+#define 	RCC_CFGR_HPRE1			5u
+#define 	RCC_CFGR_HPRE0			4u
+#define 	RCC_CFGR_SWS1			3u
+#define 	RCC_CFGR_SWS0			2u
+#define 	RCC_CFGR_SW1			1u
+#define 	RCC_CFGR_SW0			0u
+
+#define 	RCC_AHBENR		*((volatile uint32*)(RCC_BASE_ADD+0x14))
+
+#endif 

@@ -1,0 +1,10 @@
+DMA1_PROGRAM.c:19:7:DMA1_voidChannelPreBuiltInit	4	static
+DMA1_PROGRAM.c:872:7:DMA1_voidChannelRunTimeInit	24	static
+DMA1_PROGRAM.c:904:7:DMA1_voidChannelStart	32	static
+DMA1_PROGRAM.c:1036:7:DMA1_Channel1__IRQHandler	8	static
+DMA1_PROGRAM.c:1061:7:DMA1_Channel2__IRQHandler	8	static
+DMA1_PROGRAM.c:1086:7:DMA1_Channel3__IRQHandler	8	static
+DMA1_PROGRAM.c:1110:7:DMA1_Channel4__IRQHandler	8	static
+DMA1_PROGRAM.c:1134:7:DMA1_Channel5__IRQHandler	8	static
+DMA1_PROGRAM.c:1159:7:DMA1_Channel6__IRQHandler	8	static
+DMA1_PROGRAM.c:1183:7:DMA1_Channel7__IRQHandler	8	static

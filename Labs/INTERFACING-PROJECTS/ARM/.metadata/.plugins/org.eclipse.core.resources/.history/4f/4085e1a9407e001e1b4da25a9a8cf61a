@@ -1,0 +1,22 @@
+#ifndef DMA_INTERFACE_H_
+#define DMA_INTERFACE_H_
+
+typedef enum
+{
+	Channel1 ,
+	Channel2 ,
+	Channel3 ,
+	Channel4 ,
+	Channel5 ,
+	Channel6 ,
+	Channel7 ,
+}Channel_t;
+
+void 	DMA1_voidChannelPreBuiltInit(void) ;
+
+uint8	DMA1_voidChannelRunTimeInit	(Channel_t copy_Channel);
+
+uint8	DMA1_voidChannelStart		(uint32 * copy_u32pSourceAddress ,uint32 * copy_u32pDestinationAddress ,uint16 copy_u16BlockLength);
+
+
+#endif

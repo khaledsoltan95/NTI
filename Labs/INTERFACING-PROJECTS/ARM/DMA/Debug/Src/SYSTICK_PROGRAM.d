@@ -1,0 +1,17 @@
+Src/SYSTICK_PROGRAM.o: ../Src/SYSTICK_PROGRAM.c ../Inc/STD_TYPES.h \
+ ../Inc/BIT_MATH.h ../Inc/ERR_TYPE.h ../Inc/SYSTICK_CONFIG.h \
+ ../Inc/SYSTICK_PRV.h ../Inc/SYSTICK_REG.h ../Inc/SYSTICK_INTERFACE.h
+
+../Inc/STD_TYPES.h:
+
+../Inc/BIT_MATH.h:
+
+../Inc/ERR_TYPE.h:
+
+../Inc/SYSTICK_CONFIG.h:
+
+../Inc/SYSTICK_PRV.h:
+
+../Inc/SYSTICK_REG.h:
+
+../Inc/SYSTICK_INTERFACE.h:
