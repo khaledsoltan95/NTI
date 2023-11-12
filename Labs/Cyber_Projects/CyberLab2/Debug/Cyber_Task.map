@@ -1,0 +1,813 @@
+Archive member included because of file (symbol)
+
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                              ./MAP.o (__mulsi3)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                              ./USART_Prog.o (__udivmodsi4)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                              ./CLCD_Prog.o (__divmodsi4)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o (exit)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                              ./USART_Prog.o (__do_copy_data)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                              ./TIMER_Prog.o (__do_clear_bss)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+                              ./CLCD_Prog.o (__fixunssfsi)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__subsf3)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                              ./CLCD_Prog.o (__mulsf3)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+                              ./CLCD_Prog.o (__gtsf2)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__gesf2)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+                              ./CLCD_Prog.o (__ltsf2)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o) (__fixsfsi)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__thenan_sf)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__prologue_saves__)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__epilogue_restores__)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__pack_f)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o) (__unpack_f)
+d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+                              d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o) (__fpcmp_parts_f)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+text             0x00000000         0x00020000         xr
+data             0x00800060         0x0000ffa0         rw !x
+eeprom           0x00810000         0x00010000         rw !x
+fuse             0x00820000         0x00000400         rw !x
+lock             0x00830000         0x00000400         rw !x
+signature        0x00840000         0x00000400         rw !x
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+LOAD ./CLCD_Prog.o
+LOAD ./DIO_Prog.o
+LOAD ./GIE_Prog.o
+LOAD ./MAP.o
+LOAD ./PORT_Prog.o
+LOAD ./TIMER_Prog.o
+LOAD ./USART_Prog.o
+LOAD ./main.o
+LOAD d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+LOAD d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5\libc.a
+LOAD d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a
+
+.hash
+ *(.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+ *(.rel.text.*)
+ *(.rel.gnu.linkonce.t*)
+
+.rela.text
+ *(.rela.text)
+ *(.rela.text.*)
+ *(.rela.gnu.linkonce.t*)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+ *(.rel.rodata.*)
+ *(.rel.gnu.linkonce.r*)
+
+.rela.rodata
+ *(.rela.rodata)
+ *(.rela.rodata.*)
+ *(.rela.gnu.linkonce.r*)
+
+.rel.data
+ *(.rel.data)
+ *(.rel.data.*)
+ *(.rel.gnu.linkonce.d*)
+
+.rela.data
+ *(.rela.data)
+ *(.rela.data.*)
+ *(.rela.gnu.linkonce.d*)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.text           0x00000000     0x2ff0
+ *(.vectors)
+ .vectors       0x00000000       0x54 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000000                __vectors
+                0x00000000                __vector_default
+ *(.vectors)
+ *(.progmem.gcc*)
+ *(.progmem*)
+                0x00000054                . = ALIGN (0x2)
+                0x00000054                __trampolines_start = .
+ *(.trampolines)
+ .trampolines   0x00000054        0x0 linker stubs
+ *(.trampolines*)
+                0x00000054                __trampolines_end = .
+ *(.jumptables)
+ *(.jumptables*)
+ *(.lowtext)
+ *(.lowtext*)
+                0x00000054                __ctors_start = .
+ *(.ctors)
+                0x00000054                __ctors_end = .
+                0x00000054                __dtors_start = .
+ *(.dtors)
+                0x00000054                __dtors_end = .
+ SORT(*)(.ctors)
+ SORT(*)(.dtors)
+ *(.init0)
+ .init0         0x00000054        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x00000054                __init
+ *(.init0)
+ *(.init1)
+ *(.init1)
+ *(.init2)
+ .init2         0x00000054        0xc d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init2)
+ *(.init3)
+ *(.init3)
+ *(.init4)
+ .init4         0x00000060       0x16 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+                0x00000060                __do_copy_data
+ .init4         0x00000076       0x10 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+                0x00000076                __do_clear_bss
+ *(.init4)
+ *(.init5)
+ *(.init5)
+ *(.init6)
+ *(.init6)
+ *(.init7)
+ *(.init7)
+ *(.init8)
+ *(.init8)
+ *(.init9)
+ .init9         0x00000086        0x8 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ *(.init9)
+ *(.text)
+ .text          0x0000008e        0x4 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+                0x0000008e                __vector_1
+                0x0000008e                __vector_12
+                0x0000008e                __bad_interrupt
+                0x0000008e                __vector_3
+                0x0000008e                __vector_17
+                0x0000008e                __vector_19
+                0x0000008e                __vector_2
+                0x0000008e                __vector_16
+                0x0000008e                __vector_18
+                0x0000008e                __vector_20
+ .text          0x00000092        0x0 ./CLCD_Prog.o
+ .text          0x00000092        0x0 ./DIO_Prog.o
+ .text          0x00000092        0x0 ./GIE_Prog.o
+ .text          0x00000092        0x0 ./MAP.o
+ .text          0x00000092        0x0 ./PORT_Prog.o
+ .text          0x00000092        0x0 ./TIMER_Prog.o
+ .text          0x00000092        0x0 ./USART_Prog.o
+ .text          0x00000092        0x0 ./main.o
+ .text          0x00000092        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .text          0x00000092        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .text          0x00000092        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .text          0x00000092        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text          0x00000092        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text          0x00000092        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text          0x00000092       0x58 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+                0x00000092                __fixunssfsi
+ .text          0x000000ea      0x354 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                0x00000382                __subsf3
+                0x000003e4                __addsf3
+ .text          0x0000043e      0x1f4 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                0x0000043e                __mulsf3
+ .text          0x00000632       0x60 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+                0x00000632                __gtsf2
+ .text          0x00000692       0x60 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+                0x00000692                __gesf2
+ .text          0x000006f2       0x60 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+                0x000006f2                __ltsf2
+ .text          0x00000752       0xa8 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                0x00000752                __fixsfsi
+ .text          0x000007fa        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .text          0x000007fa        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .text          0x000007fa        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .text          0x000007fa      0x1aa d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                0x000007fa                __pack_f
+ .text          0x000009a4       0xf0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                0x000009a4                __unpack_f
+ .text          0x00000a94       0xb2 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+                0x00000a94                __fpcmp_parts_f
+                0x00000b46                . = ALIGN (0x2)
+ *(.text.*)
+ .text.voidSetHalfDataPort
+                0x00000b46       0x60 ./CLCD_Prog.o
+ .text.voidSendEnablePulse
+                0x00000ba6      0x11e ./CLCD_Prog.o
+ .text.CLCD_voidSendCommand
+                0x00000cc4       0x36 ./CLCD_Prog.o
+                0x00000cc4                CLCD_voidSendCommand
+ .text.CLCD_voidSendData
+                0x00000cfa       0x36 ./CLCD_Prog.o
+                0x00000cfa                CLCD_voidSendData
+ .text.CLCD_voidInit
+                0x00000d30      0x134 ./CLCD_Prog.o
+                0x00000d30                CLCD_voidInit
+ .text.voidSendString
+                0x00000e64       0x7c ./CLCD_Prog.o
+                0x00000e64                voidSendString
+ .text.voidSendNumber
+                0x00000ee0      0x1de ./CLCD_Prog.o
+                0x00000ee0                voidSendNumber
+ .text.CLCD_voidGoToXY
+                0x000010be       0x48 ./CLCD_Prog.o
+                0x000010be                CLCD_voidGoToXY
+ .text.CLCD_u8WriteSpecialCharacter
+                0x00001106       0x96 ./CLCD_Prog.o
+                0x00001106                CLCD_u8WriteSpecialCharacter
+ .text.DIO_U8SetPinDirection
+                0x0000119c      0x224 ./DIO_Prog.o
+                0x0000119c                DIO_U8SetPinDirection
+ .text.DIO_U8SetPortDirection
+                0x000013c0       0x90 ./DIO_Prog.o
+                0x000013c0                DIO_U8SetPortDirection
+ .text.DIO_U8SetPinValue
+                0x00001450      0x224 ./DIO_Prog.o
+                0x00001450                DIO_U8SetPinValue
+ .text.DIO_U8SetPortValue
+                0x00001674       0x90 ./DIO_Prog.o
+                0x00001674                DIO_U8SetPortValue
+ .text.DIO_u8GetPinValue
+                0x00001704      0x136 ./DIO_Prog.o
+                0x00001704                DIO_u8GetPinValue
+ .text.DIO_u8TogglePinValue
+                0x0000183a      0x116 ./DIO_Prog.o
+                0x0000183a                DIO_u8TogglePinValue
+ .text.GIE_voidEnableGlobal
+                0x00001950       0x10 ./GIE_Prog.o
+                0x00001950                GIE_voidEnableGlobal
+ .text.GIE_voidDisableGlobal
+                0x00001960       0x10 ./GIE_Prog.o
+                0x00001960                GIE_voidDisableGlobal
+ .text.MAP      0x00001970      0x136 ./MAP.o
+                0x00001970                MAP
+ .text.PORT_voidInit
+                0x00001aa6       0x44 ./PORT_Prog.o
+                0x00001aa6                PORT_voidInit
+ .text.TIMER0_voidInit
+                0x00001aea       0x5a ./TIMER_Prog.o
+                0x00001aea                TIMER0_voidInit
+ .text.TIMER1_voidInit
+                0x00001b44       0x62 ./TIMER_Prog.o
+                0x00001b44                TIMER1_voidInit
+ .text.TIMER2_voidInit
+                0x00001ba6       0x5a ./TIMER_Prog.o
+                0x00001ba6                TIMER2_voidInit
+ .text.TIMER0_voidSetCompVal
+                0x00001c00       0x1c ./TIMER_Prog.o
+                0x00001c00                TIMER0_voidSetCompVal
+ .text.TIMER0_u8CounterFunction
+                0x00001c1c       0x8e ./TIMER_Prog.o
+                0x00001c1c                TIMER0_u8CounterFunction
+ .text.TIMER1_voidSetAngle
+                0x00001caa       0x24 ./TIMER_Prog.o
+                0x00001caa                TIMER1_voidSetAngle
+ .text.TIMER1_voidSetTimerVal
+                0x00001cce       0x24 ./TIMER_Prog.o
+                0x00001cce                TIMER1_voidSetTimerVal
+ .text.TIMER0_u16GetTimerVal
+                0x00001cf2       0x18 ./TIMER_Prog.o
+                0x00001cf2                TIMER0_u16GetTimerVal
+ .text.TIMER1_u16GetTimerVal
+                0x00001d0a       0x16 ./TIMER_Prog.o
+                0x00001d0a                TIMER1_u16GetTimerVal
+ .text.TIMER0_u8SetCallBack
+                0x00001d20       0x3a ./TIMER_Prog.o
+                0x00001d20                TIMER0_u8SetCallBack
+ .text.TIMER1_u8SetCallBack
+                0x00001d5a       0x3a ./TIMER_Prog.o
+                0x00001d5a                TIMER1_u8SetCallBack
+ .text.TIMER2_u8SetCallBack
+                0x00001d94       0x3a ./TIMER_Prog.o
+                0x00001d94                TIMER2_u8SetCallBack
+ .text.__vector_10
+                0x00001dce       0x66 ./TIMER_Prog.o
+                0x00001dce                __vector_10
+ .text.__vector_11
+                0x00001e34       0x66 ./TIMER_Prog.o
+                0x00001e34                __vector_11
+ .text.__vector_4
+                0x00001e9a       0x66 ./TIMER_Prog.o
+                0x00001e9a                __vector_4
+ .text.__vector_5
+                0x00001f00       0x66 ./TIMER_Prog.o
+                0x00001f00                __vector_5
+ .text.__vector_6
+                0x00001f66       0x66 ./TIMER_Prog.o
+                0x00001f66                __vector_6
+ .text.__vector_7
+                0x00001fcc       0x66 ./TIMER_Prog.o
+                0x00001fcc                __vector_7
+ .text.__vector_8
+                0x00002032       0x66 ./TIMER_Prog.o
+                0x00002032                __vector_8
+ .text.__vector_9
+                0x00002098       0x66 ./TIMER_Prog.o
+                0x00002098                __vector_9
+ .text.USART_voidInit
+                0x000020fe       0xc2 ./USART_Prog.o
+                0x000020fe                USART_voidInit
+ .text.USART_voidSendByteSynch
+                0x000021c0       0x34 ./USART_Prog.o
+                0x000021c0                USART_voidSendByteSynch
+ .text.USART_u8RecieveByteSynch
+                0x000021f4       0x5c ./USART_Prog.o
+                0x000021f4                USART_u8RecieveByteSynch
+ .text.USART_u8SendBufferSynch
+                0x00002250       0x5e ./USART_Prog.o
+                0x00002250                USART_u8SendBufferSynch
+ .text.USART_u8ReceiveBufferSynch
+                0x000022ae       0x68 ./USART_Prog.o
+                0x000022ae                USART_u8ReceiveBufferSynch
+ .text.USART_u16FindUBRRValue
+                0x00002316      0x1a6 ./USART_Prog.o
+                0x00002316                USART_u16FindUBRRValue
+ .text.USART_u16InitUBRRValue
+                0x000024bc       0x24 ./USART_Prog.o
+                0x000024bc                USART_u16InitUBRRValue
+ .text.USART_voidSendByteAsynch
+                0x000024e0       0x80 ./USART_Prog.o
+                0x000024e0                USART_voidSendByteAsynch
+ .text.USART_u8RecieveByteAsynch
+                0x00002560       0x6c ./USART_Prog.o
+                0x00002560                USART_u8RecieveByteAsynch
+ .text.USART_u8SendBufferAsynch
+                0x000025cc       0x96 ./USART_Prog.o
+                0x000025cc                USART_u8SendBufferAsynch
+ .text.USART_u8SendStringBufferAsynch
+                0x00002662       0x8c ./USART_Prog.o
+                0x00002662                USART_u8SendStringBufferAsynch
+ .text.USART_u8ReceiveBufferAsynch
+                0x000026ee       0x76 ./USART_Prog.o
+                0x000026ee                USART_u8ReceiveBufferAsynch
+ .text.USART_u8ReceiveStringBufferAsynch
+                0x00002764       0x6c ./USART_Prog.o
+                0x00002764                USART_u8ReceiveStringBufferAsynch
+ .text.__vector_13
+                0x000027d0      0x1a0 ./USART_Prog.o
+                0x000027d0                __vector_13
+ .text.__vector_14
+                0x00002970       0x2a ./USART_Prog.o
+                0x00002970                __vector_14
+ .text.__vector_15
+                0x0000299a      0x172 ./USART_Prog.o
+                0x0000299a                __vector_15
+ .text.main     0x00002b0c      0x2f8 ./main.o
+                0x00002b0c                main
+ .text.ISR1     0x00002e04       0x14 ./main.o
+                0x00002e04                ISR1
+ .text.ISR2     0x00002e18       0x14 ./main.o
+                0x00002e18                ISR2
+ .text.Algorithm
+                0x00002e2c       0x26 ./main.o
+                0x00002e2c                Algorithm
+ .text.ConcatenateNumber
+                0x00002e52       0x74 ./main.o
+                0x00002e52                ConcatenateNumber
+ .text.libgcc   0x00002ec6       0x3e d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+                0x00002ec6                __mulsi3
+ .text.libgcc   0x00002f04       0x44 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+                0x00002f04                __udivmodsi4
+ .text.libgcc   0x00002f48       0x36 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+                0x00002f48                __divmodsi4
+ .text.libgcc   0x00002f7e        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .text.libgcc   0x00002f7e        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .text.libgcc   0x00002f7e        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .text.libgcc   0x00002f7e       0x38 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+                0x00002f7e                __prologue_saves__
+ .text.libgcc   0x00002fb6       0x36 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+                0x00002fb6                __epilogue_restores__
+                0x00002fec                . = ALIGN (0x2)
+ *(.fini9)
+ .fini9         0x00002fec        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+                0x00002fec                exit
+                0x00002fec                _exit
+ *(.fini9)
+ *(.fini8)
+ *(.fini8)
+ *(.fini7)
+ *(.fini7)
+ *(.fini6)
+ *(.fini6)
+ *(.fini5)
+ *(.fini5)
+ *(.fini4)
+ *(.fini4)
+ *(.fini3)
+ *(.fini3)
+ *(.fini2)
+ *(.fini2)
+ *(.fini1)
+ *(.fini1)
+ *(.fini0)
+ .fini0         0x00002fec        0x4 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ *(.fini0)
+                0x00002ff0                _etext = .
+
+.data           0x00800060       0x4c load address 0x00002ff0
+                0x00800060                PROVIDE (__data_start, .)
+ *(.data)
+ .data          0x00800060        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .data          0x00800060        0x0 ./CLCD_Prog.o
+ .data          0x00800060        0x0 ./DIO_Prog.o
+ .data          0x00800060        0x0 ./GIE_Prog.o
+ .data          0x00800060        0x0 ./MAP.o
+ .data          0x00800060        0x0 ./PORT_Prog.o
+ .data          0x00800060        0x0 ./TIMER_Prog.o
+ .data          0x00800060        0x0 ./USART_Prog.o
+ .data          0x00800060       0x3c ./main.o
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .data          0x0080009c        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .data          0x0080009c        0x8 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+                0x0080009c                __thenan_sf
+ .data          0x008000a4        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .data          0x008000a4        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .data          0x008000a4        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .data          0x008000a4        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .data          0x008000a4        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ *(.data*)
+ .data.USART_DataType
+                0x008000a4        0x1 ./USART_Prog.o
+ .data.USART_u8Status
+                0x008000a5        0x1 ./USART_Prog.o
+ .data.Required
+                0x008000a6        0x5 ./main.o
+ *(.rodata)
+ *(.rodata*)
+ *(.gnu.linkonce.d*)
+                0x008000ac                . = ALIGN (0x2)
+ *fill*         0x008000ab        0x1 00
+                0x008000ac                _edata = .
+                0x008000ac                PROVIDE (__data_end, .)
+
+.bss            0x008000ac       0x22
+                0x008000ac                PROVIDE (__bss_start, .)
+ *(.bss)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/../../../../avr/lib/avr5/crtm32.o
+ .bss           0x008000ac        0x0 ./CLCD_Prog.o
+ .bss           0x008000ac        0x0 ./DIO_Prog.o
+ .bss           0x008000ac        0x0 ./GIE_Prog.o
+ .bss           0x008000ac        0x0 ./MAP.o
+ .bss           0x008000ac        0x0 ./PORT_Prog.o
+ .bss           0x008000ac        0x0 ./TIMER_Prog.o
+ .bss           0x008000ac        0x0 ./USART_Prog.o
+ .bss           0x008000ac        0x0 ./main.o
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mulsi3.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_udivmodsi4.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_divmodsi4.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_exit.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_copy_data.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_clear_bss.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_prologue.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_epilogue.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .bss           0x008000ac        0x0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ *(.bss*)
+ .bss.TIMER0_pvNotificationFunc
+                0x008000ac        0x2 ./TIMER_Prog.o
+ .bss.TIMER1_pvNotificationFunc
+                0x008000ae        0x2 ./TIMER_Prog.o
+ .bss.TIMER2_pvNotificationFunc
+                0x008000b0        0x2 ./TIMER_Prog.o
+ .bss.USART_u8Date
+                0x008000b2        0x2 ./USART_Prog.o
+ .bss.USART_u8DataLength
+                0x008000b4        0x1 ./USART_Prog.o
+ .bss.USART_u8Counter
+                0x008000b5        0x1 ./USART_Prog.o
+ .bss.USART_pu8Buffer
+                0x008000b6        0x2 ./USART_Prog.o
+ .bss.USART_pu8StringBuffer
+                0x008000b8        0x2 ./USART_Prog.o
+ .bss.USARTpNotificationFunc
+                0x008000ba        0x2 ./USART_Prog.o
+ .bss.Flag      0x008000bc        0x1 ./main.o
+ .bss.Flag2     0x008000bd        0x1 ./main.o
+ .bss.Counter   0x008000be        0x1 ./main.o
+ .bss.RandomNumber
+                0x008000bf        0x2 ./main.o
+                0x008000bf                RandomNumber
+ .bss.NumberShould
+                0x008000c1        0x2 ./main.o
+                0x008000c1                NumberShould
+ .bss.UserNumber
+                0x008000c3        0x2 ./main.o
+ .bss.Input     0x008000c5        0x4 ./main.o
+ .bss.Input2    0x008000c9        0x5 ./main.o
+ *(COMMON)
+                0x008000ce                PROVIDE (__bss_end, .)
+                0x00002ff0                __data_load_start = LOADADDR (.data)
+                0x0000303c                __data_load_end = (__data_load_start + SIZEOF (.data))
+
+.noinit         0x008000ce        0x0
+                0x008000ce                PROVIDE (__noinit_start, .)
+ *(.noinit*)
+                0x008000ce                PROVIDE (__noinit_end, .)
+                0x008000ce                _end = .
+                0x008000ce                PROVIDE (__heap_start, .)
+
+.eeprom         0x00810000        0x0
+ *(.eeprom*)
+                0x00810000                __eeprom_end = .
+
+.fuse
+ *(.fuse)
+ *(.lfuse)
+ *(.hfuse)
+ *(.efuse)
+
+.lock
+ *(.lock*)
+
+.signature
+ *(.signature*)
+
+.stab           0x00000000     0x3204
+ *(.stab)
+ .stab          0x00000000      0xb10 ./CLCD_Prog.o
+ .stab          0x00000b10      0x6e4 ./DIO_Prog.o
+                                0x7e0 (size before relaxing)
+ .stab          0x000011f4      0x144 ./GIE_Prog.o
+                                0x1d4 (size before relaxing)
+ .stab          0x00001338      0x198 ./MAP.o
+                                0x228 (size before relaxing)
+ .stab          0x000014d0      0x168 ./PORT_Prog.o
+                                0x1f8 (size before relaxing)
+ .stab          0x00001638      0x798 ./TIMER_Prog.o
+                                0x828 (size before relaxing)
+ .stab          0x00001dd0      0xe58 ./USART_Prog.o
+                                0xee8 (size before relaxing)
+ .stab          0x00002c28      0x5dc ./main.o
+                                0x864 (size before relaxing)
+
+.stabstr        0x00000000     0x176c
+ *(.stabstr)
+ .stabstr       0x00000000     0x176c ./CLCD_Prog.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment
+ *(.comment)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges  0x00000000      0x140
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_aranges
+                0x00000020       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_aranges
+                0x00000040       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_aranges
+                0x00000060       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_aranges
+                0x00000080       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_aranges
+                0x000000a0       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_aranges
+                0x000000c0       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_aranges
+                0x000000e0       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_aranges
+                0x00000100       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_aranges
+                0x00000120       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_pubnames
+                0x00000000      0x170
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x23 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_pubnames
+                0x00000023       0x2c d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_pubnames
+                0x0000004f       0x1f d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_pubnames
+                0x0000006e       0x1e d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_pubnames
+                0x0000008c       0x1e d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_pubnames
+                0x000000aa       0x1e d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_pubnames
+                0x000000c8       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_pubnames
+                0x000000e8       0x22 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_pubnames
+                0x0000010a       0x1f d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_pubnames
+                0x00000129       0x21 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_pubnames
+                0x0000014a       0x26 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_info     0x00000000     0x1c49
+ *(.debug_info)
+ .debug_info    0x00000000       0xb1 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_info    0x000000b1      0x47a d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_info    0x0000052b      0x485 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_info    0x000009b0      0x27f d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_info    0x00000c2f      0x27f d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_info    0x00000eae      0x27f d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_info    0x0000112d      0x2b0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_info    0x000013dd      0x12c d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_info    0x00001509      0x2df d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_info    0x000017e8      0x251 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_info    0x00001a39      0x210 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+ *(.gnu.linkonce.wi.*)
+
+.debug_abbrev   0x00000000      0xeeb
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x5d d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_abbrev  0x0000005d      0x1ea d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_abbrev  0x00000247      0x21b d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_abbrev  0x00000462      0x15a d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_abbrev  0x000005bc      0x15a d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_abbrev  0x00000716      0x15a d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_abbrev  0x00000870      0x17f d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_abbrev  0x000009ef       0xad d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_abbrev  0x00000a9c      0x1c0 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_abbrev  0x00000c5c      0x154 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_abbrev  0x00000db0      0x13b d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_line     0x00000000      0xdad
+ *(.debug_line)
+ .debug_line    0x00000000       0xa7 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_line    0x000000a7      0x2af d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_line    0x00000356      0x239 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_line    0x0000058f       0xd3 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_line    0x00000662       0xd3 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_line    0x00000735       0xd3 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_line    0x00000808      0x109 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_line    0x00000911       0x90 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_line    0x000009a1      0x18a d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_line    0x00000b2b      0x14b d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_line    0x00000c76      0x137 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_frame    0x00000000      0x160
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_frame   0x00000020       0x40 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_frame   0x00000060       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_frame   0x00000080       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_frame   0x000000a0       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_frame   0x000000c0       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_frame   0x000000e0       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_frame   0x00000100       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_frame   0x00000120       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_frame   0x00000140       0x20 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_str      0x00000000      0x28d
+ *(.debug_str)
+ .debug_str     0x00000000       0xbf d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+                                 0xfe (size before relaxing)
+ .debug_str     0x000000bf      0x14d d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+                                0x206 (size before relaxing)
+ .debug_str     0x0000020c       0x27 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+                                0x1bf (size before relaxing)
+ .debug_str     0x00000233        0xf d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x00000242        0x8 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x0000024a        0x8 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+                                0x195 (size before relaxing)
+ .debug_str     0x00000252        0xa d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+                                0x19e (size before relaxing)
+ .debug_str     0x00000000      0x103 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_thenan_sf.o)
+ .debug_str     0x0000025c       0x16 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+                                0x19d (size before relaxing)
+ .debug_str     0x00000272        0xb d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+                                0x17f (size before relaxing)
+ .debug_str     0x0000027d       0x10 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+                                0x163 (size before relaxing)
+
+.debug_loc      0x00000000      0x7ce
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x34 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fixunssfsi.o)
+ .debug_loc     0x00000034      0x32a d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_addsub_sf.o)
+ .debug_loc     0x0000035e      0x104 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
+ .debug_loc     0x00000462       0x3c d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_gt_sf.o)
+ .debug_loc     0x0000049e       0x3c d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_ge_sf.o)
+ .debug_loc     0x000004da       0x3c d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_lt_sf.o)
+ .debug_loc     0x00000516       0x7e d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_sf_to_si.o)
+ .debug_loc     0x00000594      0x13e d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_pack_sf.o)
+ .debug_loc     0x000006d2       0xac d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_unpack_sf.o)
+ .debug_loc     0x0000077e       0x50 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_fpcmp_parts_sf.o)
+
+.debug_macinfo
+ *(.debug_macinfo)
+OUTPUT(Cyber_Task.elf elf32-avr)
+LOAD linker stubs
+
+.debug_ranges   0x00000000       0x50
+ .debug_ranges  0x00000000       0x50 d:/embedded_system/diploma 2023/tools/avr tools/sdk/sdk_win_64/sdk_win_64/winavr/bin/../lib/gcc/avr/4.3.3/avr5\libgcc.a(_mul_sf.o)
